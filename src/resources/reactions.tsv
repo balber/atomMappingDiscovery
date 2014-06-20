@@ -23,7 +23,7 @@ reaction name	ECN	has match in metaCyc	contains atom mapping	left mets	right met
 (5-Glutamyl)-peptide:amino-acid 5-glutamyltransferase Arachidonic acid metabolism EC:2.3.2.2	2.3.2.2	True	True	L-glutamate(1-)+Leukotriene D4	Water+leukotriene C4(2-)	
 (5-Glutamyl)-peptide:amino-acid 5-glutamyltransferase Cyanoamino acid metabolism EC:2.3.2.2	2.3.2.2	False	False	Water+carbon dioxide+gamma-Glutamyl-3-aminopropiononitrile	proton+L-glutamate(1-)+L-3-Cyanoalanine	
 (5-L-Glutamyl)-L-amino-acid 5-glutamyltransferase (cyclizing) Glutathione metabolism EC:2.3.2.4	2.3.2.4	False	False	L-cysteine+5-oxoprolinate	gamma-L-Glutamyl-L-cysteine	
-(R)-3-Amino-2-methylpropanoate:2-oxoglutarate aminotransferase EC:2.6.1.22	2.6.1.22	True	True	2-methyl-3-oxopropanoate+L-glutamate(1-)	2-Oxoglutarate+D-3-Amino-isobutanoate	
+(R)-3-Amino-2-methylpropanoate:2-oxoglutarate aminotransferase EC:2.6.1.22	2.6.1.22	False	False	2-methyl-3-oxopropanoate+L-glutamate(1-)	2-Oxoglutarate+D-3-Amino-isobutanoate	
 (R)-3-Hydroxybutanoate:NAD+ oxidoreductase	1.1.1.30	False	False	proton+Nicotinamide adenine dinucleotide+acetoacetate	Nicotinamide adenine dinucleotide+(R)-3-hydroxybutyrate	
 (R)-4-Phosphopantothenate:L-cysteine ligase EC:6.3.2.5	6.3.2.5	True	True	proton+Diphosphate+CMP+N-((R)-4-Phosphopantothenoyl)-L-cysteine	L-cysteine+CTP+D-4'-Phosphopantothenate	
 (R)-Mevalonate:NADP+ oxidoreductase (CoA acylating) Biosynthesis of steroids EC:1.1.1.34	1.1.1.34	False	False	proton+Nicotinamide adenine dinucleotide phosphate+Hydroxymethylglutaryl-CoA	Nicotinamide adenine dinucleotide phosphate+Coenzyme A+(R)-mevalonate	
@@ -75,7 +75,7 @@ reaction name	ECN	has match in metaCyc	contains atom mapping	left mets	right met
 2,6 dimethylheptanoly CoA carnitine transferase		False	False	L-Carnitine+2,6 dimethylheptanoyl-CoA	Coenzyme A+2,6 dimethylheptanoyl carnitine	
 2-(Formamido)-N1-(5-phosphoribosyl)acetamidine cyclo-ligase (ADP-forming) Purine metabolism EC:6.3.3.1	6.3.3.1	True	True	ADP+proton+hydrogenphosphate+5-amino-1-(5-phospho-D-ribosyl)imidazole	ATP+2-(Formamido)-N1-(5-phospho-D-ribosyl)acetamidine	
 2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl) dihydropteridine triphosphate 7,8-8,9-dihydrolase Folate biosynthesis EC:3.5.4.16	3.5.4.16	False	False	2,5-Diamino-6-(5-triphosphoryl-3,4-trihydroxy-2-oxopentyl)- amino-4-oxopyrimidine	Water+proton+7,8-dihydroneopterin 3'-triphosphate(4-)	
-2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl) dihydropteridine triphosphate phosphohydrolase (alkaline optimum) Folate biosynthesis EC:3.1.3.1	3.1.3.1	True	True	proton+hydrogenphosphate+Dihydroneopterin	Water+7,8-dihydroneopterin 3'-triphosphate(4-)	
+2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl) dihydropteridine triphosphate phosphohydrolase (alkaline optimum) Folate biosynthesis EC:3.1.3.1	3.1.3.1	False	False	proton+hydrogenphosphate+Dihydroneopterin	Water+7,8-dihydroneopterin 3'-triphosphate(4-)	
 2-Aminoacrylate hydrolysis		True	True	Ammonium+pyruvate	Water+2-aminoacrylic acid	
 2-Aminoacrylate sulfotransferase		False	False	L-cysteate(1-)+Nicotinamide adenine dinucleotide phosphate+adenosine 3',5'-bismonophosphate(4-)	2-aminoacrylic acid+Nicotinamide adenine dinucleotide phosphate+(2R,3S,4R,5R)-5-(6-amino-9H-purin-9-yl)-4-hydroxy-2-({[(sulfonatooxy)phosphinato]oxy}methyl)oxolan-3-yl phosphate	
 2-Aminomuconate semialdehyde:NAD+ 6-oxidoreductase Tryptophan metabolism EC:1.2.1.32	1.2.1.32	False	False	proton+Nicotinamide adenine dinucleotide+2-aminomuconate(2-)	Water+Nicotinamide adenine dinucleotide+2-aminomuconate 6-semialdehyde(1-)	
@@ -177,8 +177,8 @@ reaction name	ECN	has match in metaCyc	contains atom mapping	left mets	right met
 3-sn-phosphatidate phosphohydrolase Sphingolipid metabolism EC:3.1.3.4	3.1.3.4	True	True	hydrogenphosphate+sphinganine(1+)	Water+(2S,3R)-2-azaniumyl-3-hydroxyoctadecyl phosphate	
 3-sulfino-alanine transaminase (irreversible)	2.6.1.1	False	False	L-glutamate(1-)+3-Sulfinopyruvate	proton+2-Oxoglutarate+3-Sulfino-L-alanine	
 3-sulfino-alanine transaminase (irreversible), mitochondrial	2.6.1.1	False	False	L-glutamate(1-)+3-Sulfinopyruvate	proton+2-Oxoglutarate+3-Sulfino-L-alanine	
-3-sulfinopyruvate hydrolase (spotaneous reaction)		True	True	proton+pyruvate+Sulfite	Water+3-Sulfinopyruvate	
-3-sulfinopyruvate hydrolase (spotaneous reaction), mitochondrial		True	True	proton+pyruvate+Sulfite	Water+3-Sulfinopyruvate	
+3-sulfinopyruvate hydrolase (spotaneous reaction)		False	False	proton+pyruvate+Sulfite	Water+3-Sulfinopyruvate	
+3-sulfinopyruvate hydrolase (spotaneous reaction), mitochondrial		False	False	proton+pyruvate+Sulfite	Water+3-Sulfinopyruvate	
 3alpha,7alpha,12alpha-Trihydroxy-5beta-cholestan-26-al:NAD+ 26-oxidoreductase Bile acid biosynthesis EC:1.2.1.40	1.2.1.40	False	False	proton+Nicotinamide adenine dinucleotide+3alpha,7alpha,12alpha-Trihydroxy-5beta-cholestanoate	Water+Nicotinamide adenine dinucleotide+3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-al	
 3alpha,7alpha,12alpha-Trihydroxy-5beta-cholestane:NADP+ oxidoreductase (B-specific); 3alpha,7alpha,12alpha-Trihydroxy-5beta-cholestane:NADP+ oxidoreductase Bile acid biosynthesis EC:1.1.1.50	1.1.1.50	False	False	proton+Nicotinamide adenine dinucleotide phosphate+7alpha,12alpha-dihydroxy-5beta-cholestan-3-one	Nicotinamide adenine dinucleotide phosphate+5beta-cholestane-3alpha,7alpha,12alpha-triol	
 3alpha,7alpha-Dihydroxy-5beta-cholestan-26-al:NAD+ oxidoreductase Bile acid biosynthesis EC:1.2.1.3	1.2.1.3	False	False	proton+Nicotinamide adenine dinucleotide+3alpha,7alpha-Dihydroxy-5beta-cholestanate	Water+Nicotinamide adenine dinucleotide+3alpha,7alpha-dihydroxy-5beta-cholestan-26-al	
@@ -266,10 +266,10 @@ ABO blood group (transferase A, alpha 1-3-N-acetylgalactosaminyltransferase; tra
 ACP Protein assembly		False	False	ADP+hydrogenphosphate+AMP+Diphosphate+mitoApo-ACP	Water+L-glutamate(1-)+L-aspartate(1-)+ATP+L-alanine+Glycine+L-lysinium(1+)+L-argininium(1+)+L-asparagine+L-cysteine+L-serine+L-glutamine+L-isoleucine+L-leucine+L-proline+L-phenylalanine+L-tyrosine+L-valine+L-methionine+L-histidine+L-threonine	
 ADF Protein assembly		False	False	ADP+hydrogenphosphate+AMP+Diphosphate+Reduced thioredoxin	Water+ATP+L-glutamate(1-)+L-aspartate(1-)+L-asparagine+L-alanine+L-cysteine+L-glutamine+Glycine+L-serine+L-threonine+L-lysinium(1+)+L-methionine+L-histidine+L-tyrosine+L-isoleucine+L-leucine+L-tryptophan+L-phenylalanine+L-proline+L-valine	
 ADPglucose diphosphatase	3.6.1.21	True	True	proton+AMP+D-Glucose 1-phosphate	Water+ADP alpha-D-glucoside(2-)	
-ADPmannose diphosphatase	3.6.1.21	True	True	proton+AMP+D-Mannose 1-phosphate	Water+ADPmannose	
-ADPribose diphosphatase	3.6.1.13	True	True	proton+AMP+alpha-D-Ribose 5-phosphate	Water+ADPribose	
-ADPribose diphosphatase (mitochondrial)	3.6.1.13	True	True	proton+AMP+alpha-D-Ribose 5-phosphate	Water+ADPribose	
-ALAALACNc		True	True	L-alanine	Water+D-Alanyl-D-alanine	
+ADPmannose diphosphatase	3.6.1.21	False	False	proton+AMP+D-Mannose 1-phosphate	Water+ADPmannose	
+ADPribose diphosphatase	3.6.1.13	False	False	proton+AMP+alpha-D-Ribose 5-phosphate	Water+ADPribose	
+ADPribose diphosphatase (mitochondrial)	3.6.1.13	False	False	proton+AMP+alpha-D-Ribose 5-phosphate	Water+ADPribose	
+ALAALACNc		False	False	L-alanine	Water+D-Alanyl-D-alanine	
 AMP:pyrophosphate phosphoribosyltransferase Purine metabolism EC:2.4.2.7	2.4.2.7	True	True	Adenine+5-Phospho-alpha-D-ribose 1-diphosphate	AMP+Diphosphate	
 ATP Creatine kinase	2.7.3.2	True	True	ADP+N-phosphocreatinate(2-)	ATP+creatine	
 ATP Creatine kinase (c)	2.7.3.2	True	True	ADP+N-phosphocreatinate(2-)	ATP+creatine	
@@ -401,9 +401,9 @@ D-Glucuronolactone:NAD+ oxidoreductase, mitochondrial	1.5.1.12	False	False	proto
 D-Glyceraldehyde:NAD+ oxidoreductase Glycerolipid metabolism EC:1.2.1.3	1.2.1.3	False	False	proton+Nicotinamide adenine dinucleotide+D-glycerate	Water+Nicotinamide adenine dinucleotide+D-Glyceraldehyde	
 D-Lactaldehyde:NAD+ 1-oxidoreductase	1.1.1.21	False	False	Nicotinamide adenine dinucleotide+(R)-lactaldehyde	proton+Nicotinamide adenine dinucleotide+methylglyoxal	
 D-Lactaldehyde:NAD+ oxidoreductase (glutathione-formylating)	1.1.1.1	False	False	proton+Nicotinamide adenine dinucleotide+(R)-S-lactoylglutathionate(1-)	Nicotinamide adenine dinucleotide+(R)-lactaldehyde+Reduced glutathione	
-D-Ribose-5-phosphate ketol-isomerase Pentose phosphate pathway EC:5.3.1.6	5.3.1.6	True	True	D-ribulose 5-phosphate(2-)	alpha-D-Ribose 5-phosphate	
+D-Ribose-5-phosphate ketol-isomerase Pentose phosphate pathway EC:5.3.1.6	5.3.1.6	False	False	D-ribulose 5-phosphate(2-)	alpha-D-Ribose 5-phosphate	
 D-Tagatose 1-phosphate D-glyceraldehyde-3-phosphate-lyase	4.1.2.13	True	True	Dihydroxyacetone phosphate+D-Glyceraldehyde	D-Tagatose 1-phosphate	
-D-arginine oxidase, perixosomal	1.4.3.3	True	True	Hydrogen peroxide+Ammonium+5-guanidino-2-oxopentanoic acid	O2+Water+D-argininium(1+)	
+D-arginine oxidase, perixosomal	1.4.3.3	False	False	Hydrogen peroxide+Ammonium+5-guanidino-2-oxopentanoic acid	O2+Water+D-argininium(1+)	
 D-aspartate oxidase, peroxisomal	1.4.3.1	True	True	Hydrogen peroxide+Ammonium+Oxaloacetate	O2+Water+D-aspartate(1-)	
 D-lactate dehydrogenase	1.1.1.28	False	False	proton+pyruvate+Nicotinamide adenine dinucleotide	Nicotinamide adenine dinucleotide+(R)-lactate	
 D-ornithine oxidase, perixosomal	1.4.3.3	False	False	Hydrogen peroxide+Ammonium+5-amino-2-oxopentanoic acid	O2+Water+D-ornithinium(1+)	
@@ -425,7 +425,7 @@ Deoxyadenosine deaminase, extracellular	3.5.4.4	True	True	Ammonium+Deoxyinosine	
 Deoxycytidine kinase, mitochondrial (ATP)	2.7.1.74	True	True	proton+ADP+dCMP	ATP+Deoxycytidine	
 Deoxycytidine kinase, nuclear (ATP)	2.7.1.74	True	True	proton+dCMP+ADP	ATP+Deoxycytidine	
 Deoxycytidine kinase, nuclear (UTP)	2.7.1.74	True	True	proton+dCMP+UDP	UTP+Deoxycytidine	
-Deoxyribokinase	2.7.1.15	True	True	ADP+proton+2-deoxy-D-ribose 5-phosphate(2-)	ATP+2-deoxy-D-ribose	
+Deoxyribokinase	2.7.1.15	False	False	ADP+proton+2-deoxy-D-ribose 5-phosphate(2-)	ATP+2-deoxy-D-ribose	
 Dephospho-CoA nucleotidohydrolase Pantothenate and CoA biosynthesis EC:3.6.1.9	3.6.1.9	False	False	proton+AMP+Pantetheine 4'-phosphate	Water+Dephospho-CoA	
 Desmosterol reductase		False	False	Nicotinamide adenine dinucleotide phosphate+cholesterol	proton+Nicotinamide adenine dinucleotide phosphate+desmosterol	
 Diacylglycerol phosphate kinase (homo sapiens)	2.7.1.107	False	False	proton+ADP+phosphatidate(2-)	ATP+diglyceride	
@@ -489,7 +489,7 @@ Formamidopyrimidine nucleoside triphosphate 7,8-8,9-dihydrolase Folate biosynthe
 Formate-tetrahydrofolate ligase		True	True	10-Formyltetrahydrofolate+ADP+hydrogenphosphate	ATP+5,6,7,8-Tetrahydrofolate+Formate	
 Formation of sulfocysteine		False	False	S-Sulfo-L-cysteine	proton+Sulfite+L-cysteine	
 Fructose-2,6-bisphosphate 2-phosphatase	3.1.3.46	True	True	hydrogenphosphate+D-Fructose 6-phosphate	Water+beta-D-fructofuranose 2,6-bisphosphate(4-)	
-Fucokinase	2.7.1.52	True	True	ADP+proton+L-Fucose 1-phosphate	ATP+L-fucose	
+Fucokinase	2.7.1.52	False	False	ADP+proton+L-Fucose 1-phosphate	ATP+L-fucose	
 GDP-D-mannose dehydratase	4.2.1.47	True	True	Water+GDP-4-dehydro-6-deoxy-alpha-D-mannose(2-)	GDP-alpha-D-mannose(2-)	
 GDP-L-fucose synthase	1.1.1.271	False	False	Nicotinamide adenine dinucleotide phosphate+GDP-L-fucose(2-)	proton+Nicotinamide adenine dinucleotide phosphate+GDP-4-dehydro-6-deoxy-alpha-D-mannose(2-)	
 GDP-L-fucose:NADP+ 4-oxidoreductase (3,5-epimerizing) Fructose and mannose metabolism EC:1.1.1.271	1.1.1.271	False	False	Nicotinamide adenine dinucleotide+GDP-L-fucose(2-)	proton+Nicotinamide adenine dinucleotide+GDP-4-dehydro-6-deoxy-alpha-D-mannose(2-)	
@@ -539,7 +539,7 @@ Glutamate Decarboxylase	4.1.1.15	True	True	carbon dioxide+4-Aminobutanoate	proto
 Glutamate formimidoyltransferase	2.1.2.5	False	False	L-glutamate(1-)+5-Formiminotetrahydrofolate	proton+5,6,7,8-Tetrahydrofolate+N-Formimidoyl-L-glutamate	
 Glutaryl-CoA:(acceptor) 2,3-oxidoreductase (decarboxylating) Fatty acid metabolism EC:1.3.99.7	1.3.99.7	False	False	carbon dioxide+crotonoyl-CoA(4-)+Ubiquinol-10	proton+glutaryl-CoA(5-)+ubiquinone-10	
 Glutaryl-CoA:dihydrolipoamide S-succinyltransferase Lysine degradation EC:2.3.1.61	2.3.1.61	False	False	glutaryl-CoA(5-)+dihydrolipoamide	Coenzyme A+S-Glutaryldihydrolipoamide	
-Glutathione dehydrogenase (dehydroascorbate reductase)		True	True	proton+L-ascorbate+Oxidized glutathione	dehydroascorbide(1-)+Reduced glutathione	
+Glutathione dehydrogenase (dehydroascorbate reductase)		False	False	proton+L-ascorbate+Oxidized glutathione	dehydroascorbide(1-)+Reduced glutathione	
 Glutathione:cystine oxidoreductase	1.8.4.4	True	True	L-cysteine+Oxidized glutathione	L-cystine+Reduced glutathione	
 Glycerol:NADP+ oxidoreductase Glycerolipid metabolism EC:1.1.1.2 EC:1.1.1.72	1.1.1.72	False	False	proton+Nicotinamide adenine dinucleotide phosphate+D-Glyceraldehyde	Nicotinamide adenine dinucleotide phosphate+Glycerol	
 Glycerol:NADP+ oxidoreductase Glycerolipid metabolism EC:1.1.1.72 EC:1.1.1.2	1.1.1.72	False	False	proton+Nicotinamide adenine dinucleotide phosphate+D-Glyceraldehyde	Nicotinamide adenine dinucleotide phosphate+Glycerol	
@@ -584,7 +584,7 @@ Histaminase	1.4.3.6	True	True	Hydrogen peroxide+Ammonium+imidazole-4-acetaldehyd
 Homogentisate:oxygen 1,2-oxidoreductase (decyclizing)	1.13.11.5	True	True	proton+4-maleylacetoacetate	O2+homogentisate	
 Hydrogen peroxide synthesis (NADPH dependent)		False	False	Hydrogen peroxide+Nicotinamide adenine dinucleotide phosphate	O2+proton+Nicotinamide adenine dinucleotide phosphate	
 Hydrolase Class ( RXN R02973)		True	True	cysteaminium+(R)-Pantothenate	Water+pantetheine	
-Hydrolysis of glycylsarcosine for uptake		True	True	Glycine+Sarcosine	Water+Glycylsarcosine	
+Hydrolysis of glycylsarcosine for uptake		False	False	Glycine+Sarcosine	Water+Glycylsarcosine	
 Hydroxybenzoate Decaprenyltransferase		True	True	3-Decaprenyl-4-hydroxybenzoate+Diphosphate	4-hydroxybenzoate+all trans Decaprenyl diphosphate	
 Hydroxylation of 3-Decaprenyl-4-hydroxybenzoate (NADH)		False	False	Water+Nicotinamide adenine dinucleotide+3-Decaprenyl-4,5-dihdydroxybenzoate	proton+O2+Nicotinamide adenine dinucleotide+3-Decaprenyl-4-hydroxybenzoate	
 Hydroxylation of 3-Decaprenyl-4-hydroxybenzoate (NADPH)		False	False	Water+Nicotinamide adenine dinucleotide phosphate+3-Decaprenyl-4,5-dihdydroxybenzoate	proton+Nicotinamide adenine dinucleotide phosphate+O2+3-Decaprenyl-4-hydroxybenzoate	
@@ -608,7 +608,7 @@ Iodide:hydrogen-peroxide oxidoreductase 4	1.11.1.8	False	False	Water+2-aminoacry
 Isocitrate dehydrogenase (NAD+)	1.1.1.41	False	False	2-Oxoglutarate+carbon dioxide+Nicotinamide adenine dinucleotide	Nicotinamide adenine dinucleotide+Isocitrate	
 Isocitrate dehydrogenase (NADP+)	1.1.1.42	False	False	Nicotinamide adenine dinucleotide phosphate+2-Oxoglutarate+carbon dioxide	Nicotinamide adenine dinucleotide phosphate+Isocitrate	
 Isocitrate:NADP+ oxidoreductase (decarboxylating) Citrate cycle (TCA cycle) EC:1.1.1.42	1.1.1.42	False	False	proton+Nicotinamide adenine dinucleotide phosphate+oxalatosuccinate(3-)	Nicotinamide adenine dinucleotide phosphate+Isocitrate	
-Isomaltose 6-alpha-D-glucanohydrolase Starch and sucrose metabolism EC:3.2.1.10	3.2.1.10	True	True	D-glucose	Water+Isomaltose	
+Isomaltose 6-alpha-D-glucanohydrolase Starch and sucrose metabolism EC:3.2.1.10	3.2.1.10	False	False	D-glucose	Water+Isomaltose	
 Itaconate--CoA ligase (ADP-forming), mitochondrial	6.2.1.5	False	False	ADP+hydrogenphosphate+itaconyl-CoA(5-)	Coenzyme A+ATP+itaconate(2-)	
 Itaconate--CoA ligase (GDP-forming), mitochondrial	6.2.1.4	True	True	hydrogenphosphate+GDP+itaconyl-CoA(5-)	Coenzyme A+GTP+itaconate(2-)	
 L-1-Pyrroline-3-hydroxy-5-carboxylate spontaneous conversion to L-4-Hydroxyglutamate semialdehyde, mitochondrial		True	True	L-4-hydroxyglutamic semialdehyde	proton+Water+L-1-Pyrroline-3-hydroxy-5-carboxylate	
@@ -630,7 +630,7 @@ L-Cysteine L-homocysteine-lyase (deaminating) Cysteine metabolism EC:4.4.1.1	4.4
 L-Cystine Lysteine-lyase (deaminating)	4.4.1.1	True	True	Ammonium+pyruvate+3-disulfanyl-L-alanine	Water+L-cystine	
 L-Dehydroascorbate lactonohydrolase	3.1.1.17	False	False	proton+(4R,5S)-4,5,6-trihydroxy-2,3-dioxohexanoate	Water+dehydroascorbide(1-)	
 L-Formylkynurenine hydrolase	3.7.1.3	False	False	proton+L-alanine+N-formylanthranilate	Water+N-formyl-L-kynurenine	
-L-Fucose ketol-isomerase Fructose and mannose metabolism EC:5.3.1.25	5.3.1.25	True	True	L-Fuculose	L-fucose	
+L-Fucose ketol-isomerase Fructose and mannose metabolism EC:5.3.1.25	5.3.1.25	False	False	L-Fuculose	L-fucose	
 L-Glutamate 5-semialdehyde:NAD+ oxidoreductase Arginine and proline metabolism EC:1.5.1.12	1.5.1.12	False	False	proton+Nicotinamide adenine dinucleotide+L-glutamate(1-)	Water+Nicotinamide adenine dinucleotide+L-Glutamate 5-semialdehyde	
 L-Glutamine:pyruvate aminotransferase Glutamate metabolism EC:2.6.1.15	2.6.1.15	True	True	L-alanine+2-oxoglutaramate	pyruvate+L-glutamine	
 L-Histidine:4-aminobutanoate ligase (AMP-forming) Urea cycle and metabolism of amino groups EC:6.3.2.11	6.3.2.11	False	False	proton+AMP+Diphosphate+Homocarnosine	ATP+4-Aminobutanoate+L-histidine	
@@ -675,7 +675,7 @@ Lactosylceramide 4-alpha-galactosyltransferase	2.4.1.228	False	False	proton+trih
 Lactosylceramide alpha-2,3-sialyltransferase, Golgi apparatus	2.4.99.9	False	False	proton+CMP+alpha-N-acetylneuraminosyl-(2->3)-beta-D-galactosyl-(1->4)-beta-D-glucosylceramide(1-)	galactosyl glucosyl ceramide+CMP-N-acetyl-beta-neuraminate(2-)	
 Lanosterol,NADPH:oxygen oxidoreductase (14-methyl cleaving) Biosynthesis of steroids EC:1.14.13.70	1.14.13.70	False	False	Water+4,4-dimethyl-5alpha-cholesta-8,14,24-trien-3beta-ol+Nicotinamide adenine dinucleotide phosphate+Formate	O2+proton+Nicotinamide adenine dinucleotide phosphate+lanosterol	
 Lathosterol oxidase	1.3.3.2	False	False	cholesta-5,7-dien-3beta-ol+Water+Nicotinamide adenine dinucleotide phosphate	O2+proton+Nicotinamide adenine dinucleotide phosphate+5alpha-cholest-7-en-3beta-ol	
-Lauroyl-CoA:acetyl-CoA C-acyltransferase Fatty acid elongation in mitochondria / Fatty acid metabolism EC:2.3.1.16	2.3.1.16	True	True	Acetyl-CoA+Dodecanoyl-CoA (n-C12:0CoA)	Coenzyme A+3-Oxotetradecanoyl-CoA	
+Lauroyl-CoA:acetyl-CoA C-acyltransferase Fatty acid elongation in mitochondria / Fatty acid metabolism EC:2.3.1.16	2.3.1.16	False	False	Acetyl-CoA+Dodecanoyl-CoA (n-C12:0CoA)	Coenzyme A+3-Oxotetradecanoyl-CoA	
 Lecithin retinol acyltransferase		False	False	lysophosphatidylcholine+fatty acid retinol	Phosphatidylcholine+retinol	
 Lecithin retinol acyltransferase (11-cis)		False	False	lysophosphatidylcholine+fatty acid 11-cis-retinol	Phosphatidylcholine+11-cis-retinol	
 Lecithin retinol acyltransferase (9-cis)		False	False	lysophosphatidylcholine+fatty acid 9-cis-retinol	Phosphatidylcholine+9-cis-retinol	
@@ -695,9 +695,9 @@ Malonyl-CoA Decarboxylase peroxisomal	4.1.1.9	True	True	Acetyl-CoA+carbon dioxid
 Malonyl-CoA Decarboxylase, mitochondrial	4.1.1.9	True	True	carbon dioxide+Acetyl-CoA	proton+Malonyl-CoA	
 Malonyl-CoA-ACP transacylase	2.3.1.85	False	False	Coenzyme A+Malonyl-[acyl-carrier protein]	Malonyl-CoA+acyl carrier protein	
 Malonyl-CoA-ACP transacylase, mitochondrial	2.3.1.39	False	False	Coenzyme A+Malonyl-[acyl-carrier protein]	Malonyl-CoA+acyl carrier protein	
-Maltodextrin glucosidase (maltotriose)	3.2.1.20	True	True	D-glucose+Maltose	Water+maltotriose	
-Maltodextrin glucosidase (maltotriose), extracellular		True	True	D-glucose+Maltose	Water+maltotriose	
-Maltodextrin glucosidase (maltotriose), lysosome	3.2.1.20	True	True	D-glucose+Maltose	Water+maltotriose	
+Maltodextrin glucosidase (maltotriose)	3.2.1.20	False	False	D-glucose+Maltose	Water+maltotriose	
+Maltodextrin glucosidase (maltotriose), extracellular		False	False	D-glucose+Maltose	Water+maltotriose	
+Maltodextrin glucosidase (maltotriose), lysosome	3.2.1.20	False	False	D-glucose+Maltose	Water+maltotriose	
 Melatonin:NADP oxidoreductase	1.14.14.1	False	False	Water+Nicotinamide adenine dinucleotide phosphate+6-Hydroxymelatonin	O2+proton+Nicotinamide adenine dinucleotide phosphate+melatonin	
 Melatonin:oxygen 2,3-dioxygenase (indole-decyclizing)	1.13.11.42	False	False	Formyl-N-acetyl-5-methoxykynurenamine	O2+melatonin	
 Mesaconyl-CoA pyruvate-lyase	4.1.3.25	False	False	pyruvate+Acetyl-CoA	Water+Mesaconyl-CoA	
@@ -716,7 +716,7 @@ N-Formylanthranilate amidohydrolase Tryptophan metabolism EC:3.5.1.9	3.5.1.9	Fal
 N-Methylhistamine:oxygen oxidoreductase (deaminating)	1.4.3.4	False	False	Hydrogen peroxide+Ammonium+1-methylimidazole-4-acetaldehyde	Water+O2+N(tele)-methylhistaminium	
 N-Methylputrescine:oxygen oxidoreductase (deaminating)	1.4.3.6	False	False	Hydrogen peroxide+Ammonium+1-methylpyrrolinium	O2+N-methylputrescinium(2+)	
 N-[(R)-4-Phosphopantothenoyl]-L-cysteine carboxy-lyase Pantothenate and CoA biosynthesis EC:4.1.1.36	4.1.1.36	True	True	carbon dioxide+Pantetheine 4'-phosphate	proton+N-((R)-4-Phosphopantothenoyl)-L-cysteine	
-N-acetyl-D-mannosamine kinase	2.7.1.60	True	True	ADP+proton+N-acetyl-D-mannosamine 6-phosphate(2-)	ATP+N-acetyl-D-mannosamine	
+N-acetyl-D-mannosamine kinase	2.7.1.60	False	False	ADP+proton+N-acetyl-D-mannosamine 6-phosphate(2-)	ATP+N-acetyl-D-mannosamine	
 N-acetyl-g-glutamyl-phosphate reductase, irreversible, mitochondrial	1.2.1.38	False	False	Nicotinamide adenine dinucleotide phosphate+hydrogenphosphate+2-acetamido-5-oxopentanoate	proton+Nicotinamide adenine dinucleotide phosphate+N-acetyl-L-gamma-glutamyl phosphate(3-)	
 N-acetylgalactosamine 3-alpha-galactosyltransferase, Golgi apparatus		False	False	proton+UDP+Core 8	UDP-D-galactose(2-)+Tn antigen	
 N-acetylgalactosamine 3-beta-galactosyltransferase, Golgi apparatus	2.4.1.122	False	False	proton+UDP+T antigen (core 1)	UDP-D-galactose(2-)+Tn antigen	
@@ -728,7 +728,7 @@ N-acetylgalactosamine-6-sulfatase, lysosomal	3.1.6.4	False	False	proton+sulfate+
 N-acetylgalactosaminidase, alpha-	3.2.1.49	False	False	globoside+UDP-N-acetyl-D-galactosamine(2-)	proton+alpha GalNAc globoside+UDP	
 N-acetylgalactosaminidase, beta-		False	False	globoside+UDP-N-acetyl-D-galactosamine(2-)	proton+beta GalNAc globoside+UDP	
 N-acetylglucosamine 2-epimerase	5.1.3.8	True	True	N-acetyl-D-mannosamine	N-acetyl-D-glucosamine	
-N-acetylglucosamine kinase	2.7.1.59	True	True	ADP+proton+N-acetyl-D-glucosamine 6-phosphate(2-)	ATP+N-acetyl-D-glucosamine	
+N-acetylglucosamine kinase	2.7.1.59	False	False	ADP+proton+N-acetyl-D-glucosamine 6-phosphate(2-)	ATP+N-acetyl-D-glucosamine	
 N-acetylglucosamine-3-sulfatase, lysosomal	3.1.6.15	False	False	proton+sulfate+GlcNAc-GlcA-(Gal)2-Xyl	Water+GlcNAc(3S)-alpha-1,4-GlcA-beta-1,3-Gal-beta-1,3-Gal-beta-1,4-Xylose	
 N-acetylglucosamine-6-phosphate deacetylase	3.5.1.25	True	True	D-Glucosamine 6-phosphate+acetate	Water+N-acetyl-D-glucosamine 6-phosphate(2-)	
 N-acetylglucosamine-6-phosphate synthase	2.3.1.4	True	True	proton+Coenzyme A+N-acetyl-D-glucosamine 6-phosphate(2-)	Acetyl-CoA+D-Glucosamine 6-phosphate	
@@ -761,7 +761,7 @@ NADPH:oxidized-thioredoxin oxidoreductase Pyrimidine metabolism EC:1.8.1.9	1.8.1
 NICRNS		True	True	ADP+proton+Nicotinate D-ribonucleotide	ATP+Nicotinate D-ribonucleoside	
 NMN synthetase		True	True	Diphosphate+NMN	proton+5-Phospho-alpha-D-ribose 1-diphosphate+Nicotinamide	
 Nad(p)h biliverdin reductase	1.3.1.24	False	False	Nicotinamide adenine dinucleotide phosphate+bilirubin(2-)	proton+Nicotinamide adenine dinucleotide phosphate+biliverdin(2-)	
-Nalpha-(beta-alanyl)-L-histidine hydrolase IR	3.4.13.3	True	True	beta-alanine+L-histidine	Water+carnosine	
+Nalpha-(beta-alanyl)-L-histidine hydrolase IR	3.4.13.3	False	False	beta-alanine+L-histidine	Water+carnosine	
 Nicotinamide N-methyltransferase	2.1.1.1	True	True	1-methylnicotinamide+S-Adenosyl-L-homocysteine	S-Adenosyl-L-methionine+Nicotinamide	
 Nicotinamide-D-ribonucleotide amidohydrolase Nicotinate and nicotinamide metabolism EC:3.5.1.42	3.5.1.42	True	True	Ammonium+Nicotinate D-ribonucleotide	Water+NMN	
 Nicotinate D-ribonucleotide phosphohydrolase	3.1.3.5	True	True	hydrogenphosphate+Nicotinate D-ribonucleoside	Water+Nicotinate D-ribonucleotide	
@@ -919,7 +919,7 @@ RE1134		False	False	Water+Nicotinamide adenine dinucleotide phosphate+3beta-hydr
 RE1135	3.1.6.2	False	False	proton+pregnenolone+sulfate	Water+pregnenolone sulfate	
 RE1233	2.6.1.7	False	False	Water+L-glutamate(1-)+kynurenate	2-Oxoglutarate+L-kynurenine	
 RE1234	2.3.1.57	True	True	proton+Coenzyme A+N(1)-acetylspermidinium(2+)	Acetyl-CoA+Spermidine	
-RE1235		True	True	proton+Coenzyme A+N(8)-acetylspermidinium(2+)	Acetyl-CoA+Spermidine	
+RE1235		False	False	proton+Coenzyme A+N(8)-acetylspermidinium(2+)	Acetyl-CoA+Spermidine	
 RE1236		False	False	proton+Coenzyme A+N1,N8-diacetylspermidine	Acetyl-CoA+N(1)-acetylspermidinium(2+)	
 RE1238	2.3.1.57	True	True	proton+Coenzyme A+N(1)-acetylsperminium(3+)	Acetyl-CoA+spermine(4+)	
 RE1240		False	False	proton+Coenzyme A+N(1),N(12)-diacetylsperminium(2+)	Acetyl-CoA+N(1)-acetylsperminium(3+)	
@@ -936,7 +936,7 @@ RE1441	2.7.1.68	False	False	ADP+proton+1-phosphatidyl-1D-myo-inositol 5-phosphat
 RE1447	3.1.3.66	False	False	hydrogenphosphate+1-phosphatidyl-1D-myo-inositol 5-phosphate(3-)	Water+phosphatidylinositol 4,5-bisphosphate	
 RE1448	3.1.3.67	False	False	hydrogenphosphate+1-phosphatidyl-1D-myo-inositol(1-)	Water+1-phosphatidyl-1D-myo-inositol 5-phosphate(3-)	
 RE1473	2.3.2.2	False	False	L-cysteinylglycine+gama-L-glutamyl-L-alanine	L-alanine+Reduced glutathione	
-RE1508		True	True	ADP+proton+D-Mannose 1,6-bisphosphate	ATP+D-Mannose 1-phosphate	
+RE1508		False	False	ADP+proton+D-Mannose 1,6-bisphosphate	ATP+D-Mannose 1-phosphate	
 RE1514	6.2.1.3	True	True	AMP+Diphosphate+linoleic coenzyme A	Coenzyme A+ATP+linoleate	
 RE1516	1.3.99.13	False	False	Flavin adenine dinucleotide reduced+trans,cis,cis-2,9,12-octadecatrienoyl-CoA	Flavin adenine dinucleotide oxidized+linoleic coenzyme A	
 RE1517	1.3.99.13	False	False	Flavin adenine dinucleotide reduced+trans,cis,cis-2,7,10-hexadecatrienoyl-CoA	Flavin adenine dinucleotide oxidized+cis,cis-palmito-7,10-dienoyl-CoA	
@@ -949,7 +949,7 @@ RE1523	4.2.1.17	False	False	(3S)-3-hydroxylinoleoyl-CoA	Water+trans,cis,cis-2,9,
 RE1525	1.1.1.35	False	False	proton+Nicotinamide adenine dinucleotide+3-oxo-cis,cis-7,10-hexadecadienoyl-CoA	Nicotinamide adenine dinucleotide+(3S)-3-hydroxy-cis,cis-palmito-7,10-dienoyl-CoA	
 RE1526	1.1.1.35	False	False	proton+Nicotinamide adenine dinucleotide+3-oxo-cis,cis-5,8-tetradecadienoyl-CoA	Nicotinamide adenine dinucleotide+3(S)-hydroxy-5Z,8Z-tetradecadienoyl-CoA	
 RE1527		False	False	proton+Nicotinamide adenine dinucleotide+3-oxolaur-6-cis-enoyl-CoA	Nicotinamide adenine dinucleotide+(3S)-3-hydroxydodec-cis-6-enoyl-CoA	
-RE1530	2.7.1.21	True	True	proton+dGDP+dUMP	dGTP+Deoxyuridine	
+RE1530	2.7.1.21	False	False	proton+dGDP+dUMP	dGTP+Deoxyuridine	
 RE1531	2.3.1.16	False	False	Acetyl-CoA+cis,cis-palmito-7,10-dienoyl-CoA	Coenzyme A+3-oxolinoleoyl-CoA	
 RE1532	2.3.1.16	False	False	Acetyl-CoA+cis,cis-myristo-5,8-dienoyl-CoA	Coenzyme A+3-oxo-cis,cis-7,10-hexadecadienoyl-CoA	
 RE1533	2.3.1.16	True	True	Acetyl-CoA+cis,cis-3,6-Dodecadienoyl-CoA	Coenzyme A+3-oxo-cis,cis-5,8-tetradecadienoyl-CoA	
@@ -997,10 +997,10 @@ RE1828		False	False	Water+Nicotinamide adenine dinucleotide phosphate+3beta,7alp
 RE1829		False	False	proton+Nicotinamide adenine dinucleotide phosphate+7alpha-hydroxy-3-oxo-4-cholestenoic acid anion	Nicotinamide adenine dinucleotide phosphate+3beta,7alpha-dihydroxy-5-cholestenoate	
 RE1830		False	False	proton+Nicotinamide adenine dinucleotide phosphate+3beta-hydroxy-5-cholestene-27-oate	Water+Nicotinamide adenine dinucleotide phosphate+3beta-hydroxy-5-cholestenal	
 RE1834	3.1.2.2	True	True	proton+Coenzyme A+Cholate	Water+choloyl-CoA(4-)	
-RE1835	3.1.2.2	True	True	proton+Coenzyme A+chenodeoxycholate	Water+chenodeoxycholoyl coenzyme a	
+RE1835	3.1.2.2	False	False	proton+Coenzyme A+chenodeoxycholate	Water+chenodeoxycholoyl coenzyme a	
 RE1836	2.3.1.154	False	False	Water+chenodeoxycholoyl coenzyme a+Propanoyl-CoA	Coenzyme A+O2+3alpha,7alpha-Dihydroxy-5beta-cholestanoyl-CoA	
 RE1845	2.3.1.65	True	True	Coenzyme A+taurochenodeoxycholate	Taurine+chenodeoxycholoyl coenzyme a	
-RE1846	2.3.1.65	True	True	proton+Coenzyme A+taurodeoxycholate	Taurine+deoxycholoyl-CoA	
+RE1846	2.3.1.65	False	False	proton+Coenzyme A+taurodeoxycholate	Taurine+deoxycholoyl-CoA	
 RE1860	3.1.4.37	True	True	proton+3'-UMP(2-)	Water+2',3'-cyclic UMP(1-)	
 RE1897	2.5.1.46	False	False	proton+Nicotinamide adenine dinucleotide+N-[(E)-4-ammoniobutylidene]propane-1,3-diaminium	Nicotinamide adenine dinucleotide+Spermidine	
 RE1898	2.5.1.46	False	False	trimethylenediaminium+1-pyrrolinium	N-[(E)-4-ammoniobutylidene]propane-1,3-diaminium	
@@ -1021,7 +1021,7 @@ RE1921	4.1.1.28	False	False	proton+carbon dioxide+1,2-dehydrosalsolinol	salsolin
 RE1922	2.1.1.6	False	False	proton+S-Adenosyl-L-homocysteine+(-)-Salsoline	S-Adenosyl-L-methionine+(-)-Salsolinol	
 RE1923	2.1.1.6	False	False	proton+S-Adenosyl-L-homocysteine+N-methylsalsolinol	S-Adenosyl-L-methionine+(-)-Salsolinol	
 RE1925		False	False	Water+N-methylsalsolinol	3-Methoxytyramine+acetaldehyde	
-RE1927		True	True	Water+(R,S)-Norlaudanosoline	3,4-Dihydroxyphenylacetaldehyde+dopaminium(1+)	
+RE1927		False	False	Water+(R,S)-Norlaudanosoline	3,4-Dihydroxyphenylacetaldehyde+dopaminium(1+)	
 RE1933	3.1.1.2	False	False	proton+L-homocysteine	Water+homocysteine thiolactone	
 RE1938		False	False	Water+Nicotinamide adenine dinucleotide phosphate+4-hydroxyvitamin A1	O2+proton+Nicotinamide adenine dinucleotide phosphate+retinol	
 RE1941		False	False	Water+Nicotinamide adenine dinucleotide phosphate+4-oxo-9-cis-retinoate	O2+proton+Nicotinamide adenine dinucleotide phosphate+9-cis-retinoate	
@@ -1040,7 +1040,7 @@ RE2029		False	False	3,5-dihydroxy-3,4-dihydro-1,4-benzothiazine	Water+benzothiaz
 RE2030	2.3.1.1	True	True	proton+Coenzyme A+N-Acetylmethionine	Acetyl-CoA+L-methionine	
 RE2031	2.3.1.1	False	False	proton+Coenzyme A+N-acetyl-L-alanine	Acetyl-CoA+L-alanine	
 RE2032	2.3.1.1	False	False	proton+Coenzyme A+N-acetyl-L-asparagine	Acetyl-CoA+L-asparagine	
-RE2034	2.6.1.2	True	True	2-Oxobutanoate+L-glutamate(1-)	2-Oxoglutarate+(S)-2-Aminobutanoate	
+RE2034	2.6.1.2	False	False	2-Oxobutanoate+L-glutamate(1-)	2-Oxoglutarate+(S)-2-Aminobutanoate	
 RE2040	2.3.2.4	False	False	5-oxoprolinate+(S)-2-Aminobutanoate	gama-L-glutamyl-L-alpha-aminobutyrate	
 RE2041	2.3.2.4	False	False	Reduced glutathione+5-oxoprolinate	gama-glutamylglutathione	
 RE2048	1.13.11.34	False	False	Water+5(S),6(S)-epoxy-15(R)-hydroxyeicosatetraenoate	O2+15(R)-Hydroxy-(5Z,8Z,11Z,13E)-eicosatetraenoate	
@@ -1134,7 +1134,7 @@ RE2443	2.5.1.18	False	False	Water+glutathionyl-3-hydroxykynurenine glucoside	Red
 RE2444		False	False	L-leucyl-L-serine+L-alanyl-L-leucine	Water+5-HT-moduline	
 RE2445	3.4.15.1	False	False	N-acetyl-seryl-aspartate+lysyl-proline	Water+N-acetyl-seryl-aspartyl-lysyl-proline	
 RE2452		False	False	13,14-dihydroxy-retinol	Water+13,14-epoxy-retinol	
-RE2453	6.4.1.4	True	True	proton+ADP+hydrogenphosphate+2-methylglutaconyl-CoA	ATP+Bicarbonate+2-methylcrotonoyl-CoA(4-)	
+RE2453	6.4.1.4	False	False	proton+ADP+hydrogenphosphate+2-methylglutaconyl-CoA	ATP+Bicarbonate+2-methylcrotonoyl-CoA(4-)	
 RE2454	6.4.1.4	False	False	proton+Coenzyme A+2-methylglutaconic acid	Water+2-methylglutaconyl-CoA	
 RE2459	3.1.1.13	False	False	L-lysinium(1+)+lipoate	Water+proton+lipoyllysine	
 RE2474	1.14.13.67	False	False	Water+Nicotinamide adenine dinucleotide phosphate+formaldehyde+Nordazepam	O2+proton+Nicotinamide adenine dinucleotide phosphate+Diazepam	
@@ -1160,7 +1160,7 @@ RE2596		False	False	Water+L-glutamate(1-)+xanthurenate-8-O-beta-D-glucoside	2-Ox
 RE2601		False	False	proton+melatonin radical	Water+melatonin	
 RE2605		False	False	Urate+monodehydroascorbate(1-)	L-ascorbate+urate radical	
 RE2622	2.4.1.17	False	False	proton+UDP+2-hydroxyamino-MeIQx-N2-(beta-1-glucosiduronyl)-2-hydroxyamino-3,8-dimethylimidazo[4,5-f]quinoxaline	UDP-D-glucuronate+2-hydroxyamino-3,8-dimethylimidazo[4,5-f]quinoxaline	
-RE2624	5.1.99.4	True	True	25(R)-trihydroxycoprostanoyl-CoA	25(S)-trihydroxycoprostanoyl-CoA	
+RE2624	5.1.99.4	False	False	25(R)-trihydroxycoprostanoyl-CoA	25(S)-trihydroxycoprostanoyl-CoA	
 RE2625		False	False	proton+Nicotinamide adenine dinucleotide+3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-27-al	Nicotinamide adenine dinucleotide+5beta-cholestane-3alpha,7alpha,12alpha,26-tetrol	
 RE2626		False	False	proton+Nicotinamide adenine dinucleotide phosphate+3alpha,7alpha,12alpha-Trihydroxy-5beta-cholestanoate	Water+Nicotinamide adenine dinucleotide phosphate+3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-27-al	
 RE2632		False	False	Water+Nicotinamide adenine dinucleotide phosphate+3beta,7alpha-dihydroxy-5-cholestenoate	proton+Nicotinamide adenine dinucleotide phosphate+O2+7alpha,27-dihydroxycholesterol	
@@ -1170,7 +1170,7 @@ RE2636		False	False	Water+Nicotinamide adenine dinucleotide phosphate+deoxychola
 RE2637	2.3.1.65	False	False	proton+AMP+Diphosphate+Taurolithocholate	ATP+Taurine+lithocholate	
 RE2638	2.3.1.65	False	False	proton+AMP+Diphosphate+glycolithocholate	Glycine+ATP+lithocholate	
 RE2640	3.5.1.14	False	False	acetate+L-methionine	Water+N-Acetylmethionine	
-RE2642	3.5.1.14	True	True	acetate+L-alanine	Water+N-acetyl-L-alanine	
+RE2642	3.5.1.14	False	False	acetate+L-alanine	Water+N-acetyl-L-alanine	
 RE2644	3.5.1.15	False	False	acetate+L-asparagine	Water+N-acetyl-L-asparagine	
 RE2649	3.1.2.2	True	True	proton+Coenzyme A+propionate	Water+Propanoyl-CoA	
 RE2651		False	False	all-trans-retinal	retinal	
@@ -1288,12 +1288,12 @@ RE3020	1.14.13.30	False	False	Water+Nicotinamide adenine dinucleotide phosphate+
 RE3021		False	False	Water+12,20-dioxo-leukotriene B4	12-oxo-20-dihydroxy-leukotriene B4	
 RE3022		False	False	Water+proton+12-oxo-20-carboxy-leukotriene B4	12-oxo-20-trihydroxy-leukotriene B4	
 RE3033	1.13.11.34	False	False	5(S),6(S)-epoxy-15(S)-hydroxy-7E,9E,11Z,13E-eicosatetraenoic acid anion+Hydrogen peroxide	O2+15(S)-HPETE(1-)	
-RE3036	1.13.11.31	True	True	14,15-DiHETE	15(S)-HPETE(1-)	
+RE3036	1.13.11.31	False	False	14,15-DiHETE	15(S)-HPETE(1-)	
 RE3038	3.3.2.9	False	False	Lipoxin B4	Water+5(S),6(S)-epoxy-15(S)-hydroxy-7E,9E,11Z,13E-eicosatetraenoic acid anion	
 RE3039		False	False	Coenzyme A+1-alkyl-2-acetyl-sn-glycerol 3-phosphate(2-)	Acetyl-CoA+1-alkyl-sn-glycerol 3-phosphate(1-)	
 RE3040	3.3.2.9	False	False	Lipoxin A4	Water+5(S),6(S)-epoxy-15(S)-hydroxy-7E,9E,11Z,13E-eicosatetraenoic acid anion	
 RE3041	1.13.11.34	False	False	Water+Nicotinamide adenine dinucleotide phosphate+5(S),6(S)-epoxy-15(S)-hydroxy-7E,9E,11Z,13E-eicosatetraenoic acid anion	proton+O2+Nicotinamide adenine dinucleotide phosphate+leukotriene A4(1-)	
-RE3044	1.13.11.34	True	True	Lipoxin B4	O2+14,15-DiHETE	
+RE3044	1.13.11.34	False	False	Lipoxin B4	O2+14,15-DiHETE	
 RE3045	3.1.3.59	False	False	hydrogenphosphate+1-Alkyl-2-acetyl-sn-glycerol	Water+1-alkyl-2-acetyl-sn-glycerol 3-phosphate(2-)	
 RE3050	1.2.1.36	False	False	proton+Nicotinamide adenine dinucleotide+all-trans-retinoate	Water+Nicotinamide adenine dinucleotide+13-cis-retinal	
 RE3051		False	False	proton+Coproporphyrin I	Coproporphyrinogen I	
@@ -1385,7 +1385,7 @@ RE3185	1.3.99.3	False	False	Flavin adenine dinucleotide reduced+2,6-dimethyl-tra
 RE3186	1.3.99.3	True	True	Flavin adenine dinucleotide reduced+4-methyl-trans-2-pentenoyl-CoA	Flavin adenine dinucleotide oxidized+4-methyl-pentanoyl-CoA	
 RE3189	2.3.1.16	False	False	Acetyl-CoA+2(R),6-dimethyl-heptanoyl-CoA	Coenzyme A+3-oxo-4(R),8-dimethyl-nonanoyl-CoA	
 RE3190	2.3.1.16	False	False	Propanoyl-CoA+4-methyl-pentanoyl-CoA	Coenzyme A+3-oxo-(2S)-methylisocapryloyl-CoA	
-RE3191	2.3.1.16	True	False	Acetyl-CoA+isobutyryl-CoA(4-)	Coenzyme A+3-oxo-4-methyl-pentanoyl-CoA	
+RE3191	2.3.1.16	False	False	Acetyl-CoA+isobutyryl-CoA(4-)	Coenzyme A+3-oxo-4-methyl-pentanoyl-CoA	
 RE3192	4.2.1.17	True	True	3(S)-hydroxy-4(R),8-dimethyl-nonanoyl-CoA	Water+4(R),8-dimethyl-trans-2-nonenoyl-CoA	
 RE3193	4.2.1.17	True	True	3(S)-hydroxy-2(S),6-dimethyl-heptanoyl-CoA	Water+2,6-dimethyl-trans-2-heptenoyl-CoA	
 RE3194	4.2.1.17	True	True	3(S)-hydroxy-4-methyl-pentanoyl-CoA	Water+4-methyl-trans-2-pentenoyl-CoA	
@@ -1460,7 +1460,7 @@ RE3347	1.5.1.29	False	False	Nicotinamide adenine dinucleotide+Flavin adenine din
 RE3352		False	False	carbon dioxide+Allantoin	Water+5-Hydroxyisourate	
 RE3367	1.4.3.6	False	False	Hydrogen peroxide+Ammonium+spermidine dialdehyde	O2+Water+spermidine monoaldehyde 1	
 RE3370	1.14.13.30	False	False	Water+Nicotinamide adenine dinucleotide phosphate+13'-carboxy-alpha-tocotrienol	O2+proton+Nicotinamide adenine dinucleotide phosphate+13'-hydroxy-alpha-tocotrienol	
-RE3372	2.5.1.10	True	True	Diphosphate+trans,trans,cis-geranyl-geranyl-PP	Dimethylallyl diphosphate+Farnesyl diphosphate	
+RE3372	2.5.1.10	False	False	Diphosphate+trans,trans,cis-geranyl-geranyl-PP	Dimethylallyl diphosphate+Farnesyl diphosphate	
 RE3378		False	False	Choline+1-alkyl-sn-glycerol 3-phosphate(1-)	Water+1-alkyl 2-lysoglycerol 3-phosphocholine	
 RE3381	3.2.1.31	False	False	proton+D-glucuronate+3'-carboxy-alpha-chromanol	Water+alpha-CEHC-glucuronide	
 RE3383	2.3.1.16	False	False	Acetyl-CoA+8(R)-hydroxy-hexadeca-4E,6E,10Z-trienoate	Coenzyme A+3-oxo-10(R)-hydroxy-octadeca-6E,8E,12Z-trienoate	
@@ -1541,7 +1541,7 @@ RE3492		False	False	5,12-dihydroxy-6E-LTB5	Water+leukotriene A5
 RE3493		False	False	Water+5-HEPE	proton+5-hydroperoxy-EPA	
 RE3494	2.3.2.2	False	False	L-glutamate(1-)+leukotriene D5	Water+leukotriene C5	
 RE3495	4.4.1.20	False	False	leukotriene C5	Reduced glutathione+leukotriene A5	
-RE3496	5.3.99.3	True	True	Prostaglandin E3	PGH3	
+RE3496	5.3.99.3	False	False	Prostaglandin E3	PGH3	
 RE3498	1.13.11.34	False	False	Water+5(S),6(S)-epoxy-15(R)-HEPE	O2+15(R)-HEPE	
 RE3499		True	True	5,12,18R-TriHEPE	Water+5,6-epoxy,18R-HEPE	
 RE3500	3.3.2.9	True	True	15-epi-lipoxin B5	Water+5(S),6(S)-epoxy-15(R)-HEPE	
@@ -1555,7 +1555,7 @@ RE3514	1.14.13.30	False	False	Water+Nicotinamide adenine dinucleotide phosphate+
 RE3515		False	False	Methanethiol+acrylate	proton+3-(methylthio)propionate	
 RE3518	1.14.13.30	False	False	Water+Nicotinamide adenine dinucleotide phosphate+20-OH-hepoxilin A3	O2+proton+Nicotinamide adenine dinucleotide phosphate+(5Z,9E,14Z)-(8xi,11R,12S)-11,12-epoxy-8-hydroxyicosa-5,9,14-trienoate	
 RE3519	3.3.2.9	True	True	(5Z,9E,12S,14Z)-8,11,12-trihydroxyicosa-5,9,14-trienoate	Water+(5Z,9E,14Z)-(8xi,11R,12S)-11,12-epoxy-8-hydroxyicosa-5,9,14-trienoate	
-RE3520	1.11.1.9	True	True	(5Z,9E,14Z)-(8xi,11R,12S)-11,12-epoxy-8-hydroxyicosa-5,9,14-trienoate	12(S)-HPETE(1-)	
+RE3520	1.11.1.9	False	False	(5Z,9E,14Z)-(8xi,11R,12S)-11,12-epoxy-8-hydroxyicosa-5,9,14-trienoate	12(S)-HPETE(1-)	
 RE3521	2.5.1.18	False	False	hepoxilin A3-C	Reduced glutathione+(5Z,9E,14Z)-(8xi,11R,12S)-11,12-epoxy-8-hydroxyicosa-5,9,14-trienoate	
 RE3522	1.14.13.30	False	False	Water+Nicotinamide adenine dinucleotide phosphate+12,20-DiHETE	O2+proton+Nicotinamide adenine dinucleotide phosphate+12-hydroxyeicosatetraenoate	
 RE3524		False	False	Water+delta12-Prostaglandin J2	prostaglandin D2(1-)	
@@ -1582,7 +1582,7 @@ RE3564	1.1.1.35	False	False	proton+Nicotinamide adenine dinucleotide+18,20-dioxo
 RE3565	5.3.3.9	True	True	prostaglandin-b1	prostaglandin C1(1-)	
 RE3566		False	False	prostaglandin-c2	prostaglandin-a2	
 RE3567	5.3.3.9	False	False	prostaglandin-b2	prostaglandin-c2	
-RE3568		True	True	Water+prostaglandin A1(1-)	prostaglandin E1(1-)	
+RE3568		False	False	Water+prostaglandin A1(1-)	prostaglandin E1(1-)	
 RE3570		False	False	Water+15-hydroxy-(8Z,11Z,13E)-eicosatrienoate	proton+15-hydroperoxyeicosa-8Z,11Z,13E-trienoate	
 RE3571	1.14.99.1	False	False	prostaglandin G1	O2+(8Z,11Z,14Z)-eicosatrienoic acid	
 RE3572	1.1.1.35	False	False	Nicotinamide adenine dinucleotide+18(R)-hydroxy-20-oxo-20-CoA-LTE4	proton+Nicotinamide adenine dinucleotide+CoA-20-COOH-18-oxo-LTE4	
@@ -1660,9 +1660,9 @@ Succinate-semialdehyde:NAD+ oxidoreductase Glutamate metabolism / Tyrosine metab
 Succinate-semialdehyde:NADP+ oxidoreductase Glutamate metabolism / Tyrosine metabolism / Butanoate metabolism EC:1.2.1.16	1.2.1.16	False	False	proton+Nicotinamide adenine dinucleotide phosphate+Succinate	Water+Nicotinamide adenine dinucleotide phosphate+Succinic semialdehyde	
 Succinate:ubiquinone oxidoreductase Citrate cycle (TCA cycle) EC:1.3.5.1	1.3.5.1	False	False	Ubiquinol-10+Fumarate	ubiquinone-10+Succinate	
 Succinyl-CoA:glycine C-succinyl-transferase(decarboxylating) EC:2.3.1.37	2.3.1.37	False	False	carbon dioxide+5-Amino-4-oxopentanoate	proton+2-Amino-3-oxoadipate	
-Sulfite:oxygen oxidoreductase Sulfur metabolism EC:1.8.3.1	1.8.3.1	True	True	Hydrogen peroxide+sulfate	O2+Water+Sulfite	
+Sulfite:oxygen oxidoreductase Sulfur metabolism EC:1.8.3.1	1.8.3.1	False	False	Hydrogen peroxide+sulfate	O2+Water+Sulfite	
 T9 Protein assembly		False	False	ADP+hydrogenphosphate+AMP+Diphosphate+ApoTransferin	Water+ATP+L-glutamate(1-)+L-aspartate(1-)+L-asparagine+L-alanine+L-cysteine+L-glutamine+Glycine+L-serine+L-threonine+L-lysinium(1+)+L-argininium(1+)+L-methionine+L-histidine+L-tyrosine+L-isoleucine+L-leucine+L-tryptophan+L-phenylalanine+L-proline+L-valine	
-Tachysterol 3 formation		True	True	Tachysterol 3	Previtamin D3	
+Tachysterol 3 formation		False	False	Tachysterol 3	Previtamin D3	
 Tetradecanoyl-[acyl-carrier protein]:malonyl-CoA C-acyltransferase(decarboxylating, oxoacyl- and enoyl-reducing and thioester-hydrolysing) Fatty acid biosynthesis EC:2.3.1.85	2.3.1.85	False	False	proton+Nicotinamide adenine dinucleotide phosphate+(2E)-Tetradecenoyl-ACP	Nicotinamide adenine dinucleotide phosphate+Myristoyl-ACP (n-C14:0ACP)	
 Tetradecanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating) Fatty acid biosynthesis EC:2.3.1.85	2.3.1.85	False	False	carbon dioxide+acyl carrier protein+3-Oxohexadecanoyl-ACP	proton+Myristoyl-ACP (n-C14:0ACP)+Malonyl-[acyl-carrier protein]	
 Tetrahydrobiopterin-4a-carbinolamine dehydratase	4.2.1.96	False	False	Water+6,7-dihydrobiopterin	4a-hydroxytetrahydrobiopterin	
@@ -1690,8 +1690,8 @@ UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 3, Golgi apparatus		
 UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 5		False	False	proton+UDP+N-acetyl-beta-D-glucosaminyl-(1->3)-beta-D-galactosyl-(1->4)-beta-D-glucosylceramide	galactosyl glucosyl ceramide+UDP-N-acetyl-alpha-D-glucosamine(2-)	
 UDP-GlcNAc:dolichol-phosphate GlcNAc phosphotransferase (liver)	2.7.8.15	False	False	N-Acetyl-D-glucosaminyldiphosphodolichol, human liver homolog+UMP	dolichyl phosphate(2-)+UDP-N-acetyl-alpha-D-glucosamine(2-)	
 UDP-GlcNAc:dolichol-phosphate GlcNAc phosphotransferase (uterus)	2.7.8.15	False	False	UMP+N-Acetyl-D-glucosaminyldiphosphodolichol, human uterine homolog	dolichyl phosphate(2-)+UDP-N-acetyl-alpha-D-glucosamine(2-)	
-UDP-N-acetyl-D-glucosamine 2-epimerase (Hydrolysis)	5.1.3.14	True	True	proton+UDP+N-acetyl-D-mannosamine	Water+UDP-N-acetyl-alpha-D-glucosamine(2-)	
-UDP-N-acetyl-D-glucosamine 2-epimerase Aminosugars metabolism EC:5.1.3.14	5.1.3.14	True	True	proton+UDP+N-acetyl-D-mannosamine	Water+UDP-N-acetyl-alpha-D-glucosamine(2-)	
+UDP-N-acetyl-D-glucosamine 2-epimerase (Hydrolysis)	5.1.3.14	False	False	proton+UDP+N-acetyl-D-mannosamine	Water+UDP-N-acetyl-alpha-D-glucosamine(2-)	
+UDP-N-acetyl-D-glucosamine 2-epimerase Aminosugars metabolism EC:5.1.3.14	5.1.3.14	False	False	proton+UDP+N-acetyl-D-mannosamine	Water+UDP-N-acetyl-alpha-D-glucosamine(2-)	
 UDP-N-acetylgalactosamine diphosphorylase		True	True	Diphosphate+UDP-N-acetyl-D-galactosamine(2-)	proton+N-Acetyl-D-galactosamine 1-phosphate+UTP	
 UDP-N-acetylglucosamine 4-epimerase	5.1.3.7	True	True	UDP-N-acetyl-D-galactosamine(2-)	UDP-N-acetyl-alpha-D-glucosamine(2-)	
 UDP-N-acetylglucosamine diphosphorylase	2.7.7.23	True	True	Diphosphate+UDP-N-acetyl-alpha-D-glucosamine(2-)	proton+N-Acetyl-D-glucosamine 1-phosphate+UTP	
@@ -1721,8 +1721,8 @@ UMP kinase (dATP)	2.7.4.14	False	False	UDP+dADP	dATP+UMP
 UMP kinase (dATP),nuclear	2.7.4.14	False	False	dADP+UDP	dATP+UMP	
 UMP kinase (dCTP)	2.7.4.14	False	False	UDP+dCDP	dCTP+UMP	
 UMP kinase (dCTP),nuclear	2.7.4.14	False	False	dCDP+UDP	dCTP+UMP	
-UMP kinase (dGTP)	2.7.4.14	True	True	UDP+dGDP	dGTP+UMP	
-UMP kinase (dGTP),nuclear	2.7.4.14	True	True	dGDP+UDP	dGTP+UMP	
+UMP kinase (dGTP)	2.7.4.14	False	False	UDP+dGDP	dGTP+UMP	
+UMP kinase (dGTP),nuclear	2.7.4.14	False	False	dGDP+UDP	dGTP+UMP	
 UMP kinase (mitochondrial, ATP)		True	True	ADP+UDP	ATP+UMP	
 UMP kinase, nuclear	2.7.4.14	True	True	UDP+ADP	ATP+UMP	
 URCN		True	True	4-Imidazolone-5-propanoate	Water+Urocanate	
@@ -1733,11 +1733,11 @@ UTP:pyruvate O2-phosphotransferase EC:2.7.1.40	2.7.1.40	False	False	pyruvate+UTP
 Ubiquinone biosynthesis COQ7		False	False	Water+Nicotinamide adenine dinucleotide phosphate+2-decaprenyl-5-hydroxy-6-methoxy-3-methyl-1,4-benzoquinone	proton+Nicotinamide adenine dinucleotide phosphate+O2+2-decaprenyl-6-methoxy-3-methyl-1,4-benzoquinone	
 Ubiquinone biosynthesis methyltransferase COQ5		False	False	proton+S-Adenosyl-L-homocysteine+2-decaprenyl-6-methoxy-3-methyl-1,4-benzoquinone	S-Adenosyl-L-methionine+2-decaprenyl-6-methoxy-1,4-benzoquinone	
 Ubiquinone biosynthesis monooxgenase COQ6		False	False	Water+2-decaprenyl-6-methoxy-1,4-benzoquinone	O2+2-Decaprenyl-6-methoxyphenol	
-Uptake of arachidate by the enterocytes		True	True	AMP+Diphosphate+arachidyl coenzyme A	ATP+Coenzyme A+arachidate	
+Uptake of arachidate by the enterocytes		False	False	AMP+Diphosphate+arachidyl coenzyme A	ATP+Coenzyme A+arachidate	
 Uridine triphosphate pyrophosphohydrolase Pyrimidine metabolism EC:3.6.1.19	3.6.1.19	True	True	proton+UMP+Diphosphate	Water+UTP	
 Uroporphyrinogen I carboxy-lyase Porphyrin and chlorophyll metabolism EC:4.1.1.37	4.1.1.37	True	True	carbon dioxide+CoproporphyrinogenI	proton+UroporphyrinogenI	
 V-type ATPase, H+ transporting, lysosomal	3.6.3.14	True	True	ADP+hydrogenphosphate+proton	Water+ATP	
-Very-long-chain-fatty-acid-CoA ligase	6.2.1.7	True	True	(25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oyl-CoA(4-)+AMP+Diphosphate	ATP+Coenzyme A+3alpha,7alpha,12alpha-Trihydroxy-5beta-cholestanoate	
+Very-long-chain-fatty-acid-CoA ligase	6.2.1.7	False	False	(25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oyl-CoA(4-)+AMP+Diphosphate	ATP+Coenzyme A+3alpha,7alpha,12alpha-Trihydroxy-5beta-cholestanoate	
 Vesicular transport		False	False	Dihomo-gamma-linolenate	dihomo-gamma-linolenic acid (n-6)	
 Virtual reaction/potential definition	3.5.4.15	False	False	Procollagen L-lysine	L-lysinium(1+)	
 Vitamin D-25-hydroxylase (D2)		False	False	Water+Nicotinamide adenine dinucleotide phosphate+25-Hydroxyvitamin D2	proton+Nicotinamide adenine dinucleotide phosphate+O2+vitamin D2	
@@ -1753,7 +1753,7 @@ acetate-CoA ligase (AMP-forming)	6.2.1.17	True	True	Propanoyl-CoA+AMP+Diphosphat
 acetol monooxygenase		False	False	Water+Nicotinamide adenine dinucleotide phosphate+methylglyoxal	O2+proton+Nicotinamide adenine dinucleotide phosphate+hydroxyacetone	
 acetone monooxygenase		False	False	Water+Nicotinamide adenine dinucleotide phosphate+hydroxyacetone	O2+proton+Nicotinamide adenine dinucleotide phosphate+acetone	
 acetyl-CoA C-acetyltransferase	2.3.1.9	True	False	Coenzyme A+Acetoacetyl-CoA	Acetyl-CoA	
-acetyl-CoA C-acetyltransferase (dodecanoyl), peroxisomal	2.3.1.16	True	True	Acetyl-CoA+Dodecanoyl-CoA (n-C12:0CoA)	Coenzyme A+3-Oxotetradecanoyl-CoA	
+acetyl-CoA C-acetyltransferase (dodecanoyl), peroxisomal	2.3.1.16	False	False	Acetyl-CoA+Dodecanoyl-CoA (n-C12:0CoA)	Coenzyme A+3-Oxotetradecanoyl-CoA	
 acetyl-CoA C-acetyltransferase (octanoyl-CoA), peroxisomal	2.3.1.16	True	True	Acetyl-CoA+Octanoyl-CoA (n-C8:0CoA)	Coenzyme A+3-Oxodecanoyl-CoA	
 acetyl-CoA C-acetyltransferase, mitochondrial	2.3.1.9	True	False	Acetoacetyl-CoA+Coenzyme A	Acetyl-CoA	
 acetyl-CoA C-acyltransferase (decanoyl-CoA), peroxisomal	2.3.1.16	True	True	Acetyl-CoA+Decanoyl-CoA (n-C10:0CoA)	Coenzyme A+3-Oxododecanoyl-CoA	
@@ -1774,7 +1774,7 @@ activation of docosanoic acid for transport		False	False	AMP+Diphosphate+docosan
 activation of sebacic acidd		False	False	AMP+Diphosphate+sebacoylcoa	ATP+Coenzyme A+sebacicacid	
 activation of suberic acid for formation of suberyl carnitine		False	False	AMP+Diphosphate+suberylcoa	ATP+Coenzyme A+suberic acid	
 activation of succinate		False	False	AMP+Diphosphate+Succinyl-CoA	ATP+Coenzyme A+Succinate	
-acyl-CoA dehydrogenase (2-methylbutanoyl-CoA), mitochondrial	1.3.99.12	True	True	2-methylcrotonoyl-CoA(4-)+Flavin adenine dinucleotide reduced	2-methylbutanoyl-CoA(4-)+Flavin adenine dinucleotide oxidized	
+acyl-CoA dehydrogenase (2-methylbutanoyl-CoA), mitochondrial	1.3.99.12	False	False	2-methylcrotonoyl-CoA(4-)+Flavin adenine dinucleotide reduced	2-methylbutanoyl-CoA(4-)+Flavin adenine dinucleotide oxidized	
 acyl-CoA dehydrogenase (butanoyl-CoA), mitochondrial	1.3.99.2	True	True	crotonoyl-CoA(4-)+Flavin adenine dinucleotide reduced	Flavin adenine dinucleotide oxidized+Butanoyl-CoA	
 acyl-CoA dehydrogenase (isobutyryl-CoA), mitochondrial	1.3.99.12	True	True	Flavin adenine dinucleotide reduced+2-Methylprop-2-enoyl-CoA	Flavin adenine dinucleotide oxidized+isobutyryl-CoA(4-)	
 acyl-CoA dehydrogenase (isovaleryl-CoA), mitochondrial	1.3.99.10	True	True	Flavin adenine dinucleotide reduced+3-methylbut-2-enoyl-CoA(4-)	Flavin adenine dinucleotide oxidized+Isovaleryl-CoA	
@@ -1783,7 +1783,7 @@ acyl-Coenzyme A dehydrogenase family, member 9  Bile acid biosynthesis EC:1.3.3.
 acyl-Coenzyme A oxidase 2, branched chain	1.3.3.6	False	False	Flavin adenine dinucleotide oxidized+Water+3alpha,7alpha,12alpha-Trihydroxy-5beta-cholest-24-enoyl-CoA	O2+Flavin adenine dinucleotide reduced+3alpha,7alpha,12alpha-Trihydroxy-5beta-cholestanoyl-CoA(S)	
 acylphosphatase	3.6.1.7	False	False	proton+hydrogenphosphate+3-Phospho-D-glycerate	Water+3-Phospho-D-glyceroyl phosphate	
 adenine phosphoribosyltransferase	2.4.2.7	True	True	AMP+Diphosphate	Adenine+5-Phospho-alpha-D-ribose 1-diphosphate	
-adenosine kinase		True	True	proton+AMP+dGDP	Adenosine+dGTP	
+adenosine kinase		False	False	proton+AMP+dGDP	Adenosine+dGTP	
 adenosine kinase, mitochondrial	2.7.1.20	True	True	proton+ADP+AMP	ATP+Adenosine	
 adenosylhomocysteinase	3.3.1.1	True	True	Adenosine+L-homocysteine	Water+S-Adenosyl-L-homocysteine	
 adenosylmethionine decarboxylase	4.1.1.50	True	True	carbon dioxide+S-Adenosylmethioninamine	proton+S-Adenosyl-L-methionine	
@@ -1817,7 +1817,7 @@ aldehyde dehydrogenase (acetylaldehyde, NAD), mitochondrial	1.2.1.3	False	False	
 aldehyde dehydrogenase (indole-3-acetaldehyde, NAD)		False	False	proton+Nicotinamide adenine dinucleotide+indole-3-acetate	Water+Nicotinamide adenine dinucleotide+indol-3-ylacetaldehyde	
 aldehyde dehydrogenase (indole-3-acetaldehyde, NAD), mitochondrial	1.5.1.12	False	False	proton+Nicotinamide adenine dinucleotide+indole-3-acetate	Water+Nicotinamide adenine dinucleotide+indol-3-ylacetaldehyde	
 aldehyde dehydrogenase (pristanal, NAD)		False	False	proton+Nicotinamide adenine dinucleotide+pristanic acid	Water+Nicotinamide adenine dinucleotide+pristanal	
-aldehyde oxidase Tyrosine metabolism EC:1.2.3.1	1.2.3.1	True	True	Water+O2+Gentisate aldehyde	Hydrogen peroxide+proton+2,5-dihydroxybenzoate	
+aldehyde oxidase Tyrosine metabolism EC:1.2.3.1	1.2.3.1	False	False	Water+O2+Gentisate aldehyde	Hydrogen peroxide+proton+2,5-dihydroxybenzoate	
 aldo-keto reductase family 1, member C1 (chlordecone reductase; 3-alpha hydroxysteroid dehydrogenase, type I; dihydrodiol dehydrogenase 4)	1.3.1.20	False	False	Nicotinamide adenine dinucleotide phosphate+(20S)-20-hydroxypregn-4-en-3-one	proton+Nicotinamide adenine dinucleotide phosphate+progesterone	
 aldo-keto reductase family 1, member C4 (chlordecone reductase; 3-alpha hydroxysteroid dehydrogenase, type I; dihydrodiol dehydrogenase 4)	1.1.1.50	False	False	Nicotinamide adenine dinucleotide+5beta-cholestane-3alpha,7alpha,12alpha-triol	proton+Nicotinamide adenine dinucleotide+7alpha,12alpha-dihydroxy-5beta-cholestan-3-one	
 aldo-keto reductase family 1, member D1 (delta 4-3-ketosteroid-5-beta-reductase)	1.3.99.6	False	False	Nicotinamide adenine dinucleotide phosphate+7alpha,12alpha-dihydroxy-5beta-cholestan-3-one	proton+Nicotinamide adenine dinucleotide phosphate+7alpha,12alpha-Dihydroxycholest-4-en-3-one	
@@ -1854,7 +1854,7 @@ alpha-glucosidase, extracellular	3.2.1.20	True	True	D-glucose	Water+Maltose
 alpha-glucosidase, lysosomal	3.2.1.20	True	True	D-glucose	Water+Maltose	
 alpha-mannosidase	3.2.1.24	False	False	D-Mannose+beta-1,4-mannose-N-acetylglucosamine	Water+(alpha-D-mannosyl)2-beta-D-mannosyl-N-acetylglucosamine	
 alpha-mannosidase, lysosomal	3.2.1.24	False	False	D-Mannose+beta-1,4-mannose-N-acetylglucosamine	Water+(alpha-D-mannosyl)2-beta-D-mannosyl-N-acetylglucosamine	
-alpha-methylacyl-CoA racemase	5.1.99.4	True	True	3alpha,7alpha,12alpha-Trihydroxy-5beta-cholestanoyl-CoA(S)	(25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oyl-CoA(4-)	
+alpha-methylacyl-CoA racemase	5.1.99.4	False	False	3alpha,7alpha,12alpha-Trihydroxy-5beta-cholestanoyl-CoA(S)	(25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oyl-CoA(4-)	
 alpha-methylacyl-CoA racemase (reductase)	5.1.99.4	False	False	3alpha,7alpha-Dihydroxy-5beta-cholest-24-enoyl-CoA+Water	3alpha,7alpha-Dihydroxy-5beta-cholestanoyl-CoA+O2	
 amylo-1,6-glucosidase, 4-alpha-glucanotransferase  EC:2.4.1.25	2.4.1.25	False	False	Glycogenin-G7G1	phosphorylase-limit dextrin (glycogenin-1,6{4[1,4-Glc], 4[1,4-Glc]})	
 amylo-1,6-glucosidase, 4-alpha-glucanotransferase  EC:3.2.1.33	3.2.1.33	False	False	D-glucose+glycogen, structure 3 (glycogenin-7[1,4-Glc])	Water+Glycogenin-G7G1	
@@ -1872,8 +1872,8 @@ aspartate 1-decarboxylase	4.1.1.15	True	True	carbon dioxide+beta-alanine	proton+
 aspartate N-acetyltransferase, mitochondrial	2.3.1.17	True	True	proton+Coenzyme A+N-acetyl-L-aspartate(2-)	L-aspartate(1-)+Acetyl-CoA	
 aspartate carbamoyltransferase (reversible)	2.1.3.2	True	True	proton+hydrogenphosphate+N-Carbamoyl-L-aspartate	L-aspartate(1-)+Carbamoyl phosphate	
 aspartate transaminase	2.6.1.1	True	True	L-glutamate(1-)+Oxaloacetate	2-Oxoglutarate+L-aspartate(1-)	
-b-galactosidase, extracellular	3.2.1.23	True	True	D-glucose+D-Galactose	Water+Lactose	
-b-galactosidase,lysosomal	3.2.1.18	True	True	D-Galactose+D-glucose	Water+Lactose	
+b-galactosidase, extracellular	3.2.1.23	False	False	D-glucose+D-Galactose	Water+Lactose	
+b-galactosidase,lysosomal	3.2.1.18	False	False	D-Galactose+D-glucose	Water+Lactose	
 b-ketoacyl synthetase (palmitate, n-C16:0)	2.3.1.85	False	False	Water+Nicotinamide adenine dinucleotide phosphate+carbon dioxide+Coenzyme A+Hexadecanoate (n-C16:0)	proton+Nicotinamide adenine dinucleotide phosphate+Acetyl-CoA+Malonyl-CoA	
 b-ureidopropionase	3.5.1.6	True	True	Ammonium+carbon dioxide+beta-alanine	Water+proton+N-carbamoyl-beta-alaninate	
 beta-1,4-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltransferase	2.4.1.144	False	False	proton+UDP+N-Acetyl-beta-D-glucosaminyl-1,2-alpha-D-mannosyl-1,3-(N-acetyl-beta-D-glucosaminyl-1,2-alpha-D-mannosyl-1,6)-(N-acetyl-beta-D-glucosaminyl-1,4)-beta-D-mannosyl-1,4-N-acetyl-beta-D-glucosaminyl-R	UDP-N-acetyl-alpha-D-glucosamine(2-)+((N-acetyl-D-glucosaminyl)2-(alpha-D-mannosyl)2-beta-D-mannosyl-diacetylchitobiosyl)-L-asparagine (protein)	
@@ -1983,8 +1983,8 @@ cytidylate kinase (CMP,dATP)	2.7.4.14	False	False	dADP+CDP	dATP+CMP
 cytidylate kinase (CMP,dATP),nuclear	2.7.4.14	False	False	CDP+dADP	CMP+dATP	
 cytidylate kinase (CMP,dCTP)	2.7.4.14	False	False	CDP+dCDP	CMP+dCTP	
 cytidylate kinase (CMP,dCTP),nuclear	2.7.4.14	False	False	CDP+dCDP	CMP+dCTP	
-cytidylate kinase (CMP,dGTP)	2.7.4.14	True	True	CDP+dGDP	CMP+dGTP	
-cytidylate kinase (CMP,dGTP),nuclear	2.7.4.14	True	True	CDP+dGDP	CMP+dGTP	
+cytidylate kinase (CMP,dGTP)	2.7.4.14	False	False	CDP+dGDP	CMP+dGTP	
+cytidylate kinase (CMP,dGTP),nuclear	2.7.4.14	False	False	CDP+dGDP	CMP+dGTP	
 cytidylate kinase (dCMP)	2.7.4.14	False	False	CDP+dCDP	CTP+dCMP	
 cytidylate kinase (dCMP)(GTP)		False	False	GDP+dCDP	GTP+dCMP	
 cytidylate kinase (dCMP),nuclear	2.7.4.14	True	True	dCDP+ADP	ATP+dCMP	
@@ -1995,8 +1995,8 @@ cytidylate kinase (dCMP,dATP)	2.7.4.14	False	False	dADP+dCDP	dATP+dCMP
 cytidylate kinase (dCMP,dATP),nuclear	2.7.4.14	False	False	dCDP+dADP	dCMP+dATP	
 cytidylate kinase (dCMP,dCTP)	2.7.4.14	False	False	dCDP	dCMP+dCTP	
 cytidylate kinase (dCMP,dCTP),nuclear	2.7.4.14	False	False	dCDP	dCMP+dCTP	
-cytidylate kinase (dCMP,dGTP)	2.7.4.14	True	True	dGDP+dCDP	dGTP+dCMP	
-cytidylate kinase (dCMP,dGTP),nuclear	2.7.4.14	True	True	dGDP+dCDP	dGTP+dCMP	
+cytidylate kinase (dCMP,dGTP)	2.7.4.14	False	False	dGDP+dCDP	dGTP+dCMP	
+cytidylate kinase (dCMP,dGTP),nuclear	2.7.4.14	False	False	dGDP+dCDP	dGTP+dCMP	
 cytochrome P450 1B1	1.14.14.1	False	False	Water+Nicotinamide adenine dinucleotide phosphate+4,17 dihydroxy estradiol	O2+proton+Nicotinamide adenine dinucleotide phosphate+estradiol	
 cytochrome P450 2A6	1.14.14.1	False	False	Water+Nicotinamide adenine dinucleotide phosphate+umbelliferone	O2+proton+Nicotinamide adenine dinucleotide phosphate+coumarin	
 cytochrome P450 2C18	1.14.14.1	False	False	Nicotinamide adenine dinucleotide phosphate+methanol+demethylated antipyrine	O2+proton+Nicotinamide adenine dinucleotide phosphate+antipyrine	
@@ -2020,7 +2020,7 @@ cytochrome p450 leukotriene B4		False	False	Water+Nicotinamide adenine dinucleot
 dATP:pyruvate O2-phosphotransferase Purine metabolism EC:2.7.1.40	2.7.1.40	True	True	pyruvate+dGTP	proton+Phosphoenolpyruvate+dGDP	
 dCMP deaminase	3.5.4.12	True	True	Ammonium+dUMP	Water+proton+dCMP	
 dTDP diphosphohydrolase Pyrimidine metabolism EC:3.6.1.5	3.6.1.5	True	True	proton+hydrogenphosphate+dTMP	Water+dTDP	
-dTDP-4-dehydrorhamnose 3,5-epimerase	5.1.3.13	True	True	dTDP-4-dehydro-6-deoxy-L-mannose(2-)	dTDP-4-dehydro-6-deoxy-alpha-D-glucose(2-)	
+dTDP-4-dehydrorhamnose 3,5-epimerase	5.1.3.13	False	False	dTDP-4-dehydro-6-deoxy-L-mannose(2-)	dTDP-4-dehydro-6-deoxy-alpha-D-glucose(2-)	
 dTDP-4-dehydrorhamnose reductase	1.1.1.133	False	False	Nicotinamide adenine dinucleotide phosphate+dTDP-L-rhamnose	proton+Nicotinamide adenine dinucleotide phosphate+dTDP-4-dehydro-6-deoxy-L-mannose(2-)	
 dTDPglucose 4,6-dehydratase	4.2.1.46	True	True	Water+dTDP-4-dehydro-6-deoxy-alpha-D-glucose(2-)	dTDP-glucose(2-)	
 dTMP kinase		True	True	ADP+dTDP	ATP+dTMP	
@@ -2077,7 +2077,7 @@ dolichol phosphate flippase (liver)		False	False	dolichyl phosphate(2-)+proton+a
 dolichol phosphate flippase (uterus)		False	False	proton+dolichyl phosphate(2-)+alpha-D-Glucosyl-(alpha-D-mannosyl)8-beta-D-mannosyl-diacetylchitobiosyldiphosphodolichol, human uterine homolog	Dolichyl beta-D-glucosyl phosphate, human uterine homolog+(alpha-D-Mannosyl)8-beta-D-mannosyl-diacetylchitobiosyldiphosphodolichol, human uterine homolog	
 dolichyl-phosphate-glucose-glycolipid alpha-glucosyltransferase (liver)		False	False	hydrogenphosphate+Dolichol, human liver homolog	Water+dolichyl phosphate(2-)	
 dolichyl-phosphate-glucose-glycolipid alpha-glucosyltransferase (uterus)		False	False	hydrogenphosphate+Dolichol, human uterine homolog	Water+dolichyl phosphate(2-)	
-dopamine beta-monooxygenase	1.14.17.1	True	True	Water+Norepinephrine+dehydroascorbide(1-)	O2+proton+dopaminium(1+)+L-ascorbate	
+dopamine beta-monooxygenase	1.14.17.1	False	False	Water+Norepinephrine+dehydroascorbide(1-)	O2+proton+dopaminium(1+)+L-ascorbate	
 ecgonine methyl esterase (ER)		False	False	proton+ecgonine+methanol	Water+ecgoninium methyl ester(1+)	
 electron transfer flavoprotein		False	False	Flavin adenine dinucleotide oxidized+Electron transfer flavoprotein reduced	Flavin adenine dinucleotide reduced+Electron transfer flavoprotein oxidized	
 endo-beta-N-acetylglucosaminidase	3.2.1.96	False	False	N-acetyl-D-glucosamine+reducing GlcNAc removed form of n2m2nmasn (w/o peptide)	Water+n2m2nmasn (w/o peptide linkage)	
@@ -2195,7 +2195,7 @@ fatty acid beta oxidation(C22:7-->C22:6)m		False	False	Nicotinamide adenine dinu
 fatty acid beta oxidation(C24:1-->C22:1)x		False	False	proton+Nicotinamide adenine dinucleotide+Acetyl-CoA+Hydrogen peroxide+13-docosenoylcoa	Nicotinamide adenine dinucleotide+Coenzyme A+O2+Water+nervonyl coenzyme A	
 fatty acid beta oxidation(C4-->C2)m		False	False	proton+Nicotinamide adenine dinucleotide+Acetyl-CoA+Flavin adenine dinucleotide reduced	Water+Coenzyme A+Nicotinamide adenine dinucleotide+Flavin adenine dinucleotide oxidized+Butanoyl-CoA	
 fatty acid beta oxidation(C5-->C3)m		False	False	proton+Nicotinamide adenine dinucleotide+Acetyl-CoA+Propanoyl-CoA+Flavin adenine dinucleotide reduced	Water+Coenzyme A+Nicotinamide adenine dinucleotide+Flavin adenine dinucleotide oxidized+pentanoylcoa	
-fatty acid beta oxidation(C5-->C5OH)m		True	True	3-hydroxyisovalerylcoa	Water+3-methylbut-2-enoyl-CoA(4-)	
+fatty acid beta oxidation(C5-->C5OH)m		False	False	3-hydroxyisovalerylcoa	Water+3-methylbut-2-enoyl-CoA(4-)	
 fatty acid beta oxidation(C6-->C4)m		False	False	proton+Nicotinamide adenine dinucleotide+Acetyl-CoA+Flavin adenine dinucleotide reduced+Butanoyl-CoA	Water+Coenzyme A+Nicotinamide adenine dinucleotide+Flavin adenine dinucleotide oxidized+Hexanoyl-CoA (n-C6:0CoA)	
 fatty acid beta oxidation(C6-->C4)x		False	False	proton+Nicotinamide adenine dinucleotide+Acetyl-CoA+Hydrogen peroxide+Butanoyl-CoA	Nicotinamide adenine dinucleotide+Coenzyme A+O2+Water+Hexanoyl-CoA (n-C6:0CoA)	
 fatty acid beta oxidation(C6:1-->C4:0)m		False	False	proton+Nicotinamide adenine dinucleotide+Acetyl-CoA+Butanoyl-CoA	Water+Coenzyme A+Nicotinamide adenine dinucleotide+trans-Hex-2-enoyl-CoA	
@@ -2264,7 +2264,7 @@ formimidoyltransferase cyclodeaminase	4.3.1.4	True	True	Ammonium+5,10-Methenylte
 formyl coa hydrolase		True	True	proton+Coenzyme A+Formate	Water+formyl-CoA(4-)	
 formyltetrahydrofolate dehydrogenase	1.5.1.6	False	False	proton+Nicotinamide adenine dinucleotide phosphate+carbon dioxide+5,6,7,8-Tetrahydrofolate	10-Formyltetrahydrofolate+Water+Nicotinamide adenine dinucleotide phosphate	
 fructose-bisphosphatase	3.1.3.11	True	True	hydrogenphosphate+D-Fructose 6-phosphate	Water+D-Fructose 1,6-bisphosphate	
-fructose-bisphosphate aldolase	4.1.2.13	True	True	Dihydroxyacetone phosphate+Glyceraldehyde 3-phosphate	D-Fructose 1,6-bisphosphate	
+fructose-bisphosphate aldolase	4.1.2.13	False	False	Dihydroxyacetone phosphate+Glyceraldehyde 3-phosphate	D-Fructose 1,6-bisphosphate	
 fucose-1-phosphate guanylyltransferase	2.7.7.30	False	False	Diphosphate+GDP-L-fucose(2-)	proton+GTP+L-Fucose 1-phosphate	
 fucosyltransferase 3 (galactoside 3(4)-L-fucosyltransferase, Lewis blood group included) 1	2.4.1.65	False	False	proton+GDP+(Gal)3 (Glc)1 (GlcNAc)1 (LFuc)2 (Cer)1	Type IB glycolipid+GDP-L-fucose(2-)	
 fumarase	4.2.1.2	True	True	(S)-malate(2-)	Water+Fumarate	
@@ -2362,7 +2362,7 @@ hexanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase
 hexokinase (D-fructose:ATP)	2.7.1.1	True	True	ADP+proton+D-Fructose 6-phosphate	ATP+D-Fructose	
 hexokinase (D-glucosamine:ATP)	2.7.1.1	True	True	ADP+proton+D-Glucosamine 6-phosphate	ATP+D-Glucosamine	
 hexokinase (D-glucose:ATP)		True	True	ADP+proton+D-Glucose 6-phosphate	ATP+D-glucose	
-hexokinase (D-mannose:ATP)	2.7.1.7	True	True	ADP+proton+D-Mannose 6-phosphate	ATP+D-Mannose	
+hexokinase (D-mannose:ATP)	2.7.1.7	False	False	ADP+proton+D-Mannose 6-phosphate	ATP+D-Mannose	
 histidase	4.3.1.3	True	True	Ammonium+Urocanate	L-histidine	
 histidine decarboxylase	4.1.1.28	True	True	carbon dioxide+histamium	proton+L-histidine	
 histone-lysine N-methyltransferase, nuclear	2.1.1.43	False	False	S-Adenosyl-L-homocysteine+Protein N6,N6,N6-trimethyl-L-lysine	S-Adenosyl-L-methionine+Protein N6,N6-dimethyl-L-lysine	
@@ -2371,11 +2371,11 @@ holocarboxylase synthestase (biotin protein ligase), mitochondrial		False	False	
 hyaluronan synthase	2.4.1.212	False	False	proton+UDP+hyaluronan	hyaluronan biosynthesis, precursor 1+UDP-N-acetyl-alpha-D-glucosamine(2-)+UDP-D-glucuronate	
 hydrogen-peroxide:hydrogen-peroxide oxidoreductase EC:1.11.1.6	1.11.1.6	True	True	Water+O2	Hydrogen peroxide	
 hydrolysis of Glycylleucine in the small intestine for cellular uptake		False	False	Glycine+L-leucine	Water+Glycylleucine	
-hydrolysis of Leucylleucine in the small intestine for cellular uptake		True	True	L-leucine	Water+Leucylleucine	
+hydrolysis of Leucylleucine in the small intestine for cellular uptake		False	False	L-leucine	Water+Leucylleucine	
 hydrolysis of Prolylglycine in the small intestine for cellular uptake		True	True	Glycine+L-proline	Water+Glycylproline	
 hydrolysis of cholesterol ester by cholesterol esterase 		False	False	proton+cholesterol+R total	Water+cholesterol ester	
 hydrolysis of glycylphenylalanine		False	False	Glycine+L-phenylalanine	Water+Glycylphenylalanine	
-hydrolysis of glycylproline in the small intestine for cellular uptake		True	True	Glycine+L-proline	Water+L-Prolinylglycine	
+hydrolysis of glycylproline in the small intestine for cellular uptake		False	False	Glycine+L-proline	Water+L-Prolinylglycine	
 hydrolysis of glycylycine for uptake		False	False	Glycine	Water+Glycyl-glycine	
 hydrolysis of leucylglycine		False	False	Glycine+L-leucine	Water+Leucylglycine	
 hydroxy-delta-5-steroid dehydrogenase, 3 beta- and steroid delta-isomerase 7		False	False	proton+Nicotinamide adenine dinucleotide phosphate+7alpha-hydroxycholest-4-en-3-one	Nicotinamide adenine dinucleotide phosphate+20-hydroxycholesterol	
@@ -2406,14 +2406,14 @@ inositol-1,3,4,6-tetrakisphosphate 5-kinase, nucleus	2.7.1.140	True	True	proton+
 inositol-1,3,4-trisphosphate 1-phosphatase	3.1.3.61	True	True	hydrogenphosphate+1D-myo-Inositol 3,4-bisphosphate	Water+1D-myo-inositol 1,3,4-trisphosphate(6-)	
 inositol-1,3,4-trisphosphate 4-phosphatase		True	True	hydrogenphosphate+1D-myo-Inositol 1,3-bisphosphate	Water+1D-myo-inositol 1,3,4-trisphosphate(6-)	
 inositol-1,3,4-trisphosphate 6-kinase	2.7.1.134	True	True	ADP+proton+myo-inositol 1,3,4,6-tetrakisphosphate(8-)	ATP+1D-myo-inositol 1,3,4-trisphosphate(6-)	
-inositol-1,3-bisphosphate 3-phosphatase	3.1.3.64	True	True	hydrogenphosphate+1D-myo-inositol 1-phosphate(2-)	Water+1D-myo-Inositol 1,3-bisphosphate	
+inositol-1,3-bisphosphate 3-phosphatase	3.1.3.64	False	False	hydrogenphosphate+1D-myo-inositol 1-phosphate(2-)	Water+1D-myo-Inositol 1,3-bisphosphate	
 inositol-1,4,5,6- tetrakisphosphate 3-kinase, nucleus	2.7.1.151	True	True	proton+ADP+myo-inositol 1,3,4,5,6-pentakisphosphate(10-)	ATP+1D-myo-inositol 1,4,5,6-tetrakisphosphate(8-)	
 inositol-1,4,5-triphosphate 6-kinase, nucleus	2.7.1.151	True	True	proton+ADP+1D-myo-inositol 1,4,5,6-tetrakisphosphate(8-)	ATP+1D-myo-inositol 1,4,5-trisphosphate(6-)	
 inositol-1,4,5-trisphosphate 3-kinase	2.7.1.127	True	True	ADP+proton+1D-myo-inositol 1,3,4,5-tetrakisphosphate(8-)	ATP+1D-myo-inositol 1,4,5-trisphosphate(6-)	
 inositol-1,4,5-trisphosphate 3-kinase, nucleus	2.7.1.127	True	True	proton+ADP+1D-myo-inositol 1,3,4,5-tetrakisphosphate(8-)	ATP+1D-myo-inositol 1,4,5-trisphosphate(6-)	
 inositol-1,4,5-trisphosphate 5-phosphatase	3.1.3.56	True	True	hydrogenphosphate+(1R,2R,3R,4R,5R,6S)-2,3,5,6-tetrahydroxy-4-(phosphonatooxy)cyclohexyl phosphate	Water+1D-myo-inositol 1,4,5-trisphosphate(6-)	
 inositol-1,4-bisphosphate 1-phosphatase	3.1.3.61	True	True	hydrogenphosphate+1D-myo-inositol 4-phosphate(2-)	Water+(1R,2R,3R,4R,5R,6S)-2,3,5,6-tetrahydroxy-4-(phosphonatooxy)cyclohexyl phosphate	
-inositol-1,4-bisphosphate 4-phosphatase		True	True	hydrogenphosphate+1D-myo-inositol 1-phosphate(2-)	Water+(1R,2R,3R,4R,5R,6S)-2,3,5,6-tetrahydroxy-4-(phosphonatooxy)cyclohexyl phosphate	
+inositol-1,4-bisphosphate 4-phosphatase		False	False	hydrogenphosphate+1D-myo-inositol 1-phosphate(2-)	Water+(1R,2R,3R,4R,5R,6S)-2,3,5,6-tetrahydroxy-4-(phosphonatooxy)cyclohexyl phosphate	
 inositol-3,4,5,6-tetrakisphosphate 1-kinase	2.7.1.134	True	True	ADP+proton+myo-inositol 1,3,4,5,6-pentakisphosphate(10-)	ATP+1D-myo-inositol 3,4,5,6-tetrakisphosphate(8-)	
 inositol-3,4-bisphosphate 4-phosphatase	3.1.3.66	True	True	hydrogenphosphate+1D-myo-inositol 3-phosphate(2-)	Water+1D-myo-Inositol 3,4-bisphosphate	
 insosine kinase		True	True	ADP+proton+IMP	ATP+Inosine	
@@ -2446,7 +2446,7 @@ isomerization(C6:1)m		False	False	trans-Hex-2-enoyl-CoA	3-hexenoylcoa
 isomerization(C6:1)x		False	False	trans-Hex-2-enoyl-CoA	3-hexenoylcoa	
 isopentenyl-diphosphate D-isomerase		True	True	Dimethylallyl diphosphate	Isopentenyl diphosphate	
 ketohexokinase	2.7.1.3	True	True	ADP+proton+D-Fructose 1-phosphate	ATP+D-Fructose	
-ketohexokinase (D-tagatose)	2.7.1.3	True	True	ADP+proton+D-Tagatose 1-phosphate	ATP+D-tagatose	
+ketohexokinase (D-tagatose)	2.7.1.3	False	False	ADP+proton+D-Tagatose 1-phosphate	ATP+D-tagatose	
 ketohexokinase (D-xylulose)	2.7.1.3	True	True	ADP+proton+D-Xylulose 1-phosphate	ATP+D-xylulose	
 kynureninase	3.7.1.3	True	True	proton+L-alanine+anthranilate	Water+L-kynurenine	
 kynurenine 3-monooxygenase	1.14.13.9	False	False	Water+Nicotinamide adenine dinucleotide phosphate+3-hydroxy-L-kynurenine	O2+proton+Nicotinamide adenine dinucleotide phosphate+L-kynurenine	
@@ -2482,18 +2482,18 @@ mannosyl-oligosaccharide 1,2-alpha-mannosidase, endoplasmic reticulum	3.2.1.113	
 mannosyl-oligosaccharide 1,3-1,6-alpha-mannosidase	3.2.1.114	False	False	D-Mannose+(N-acetyl-D-glucosaminyl-(alpha-D-mannosyl)2-beta-D-mannosyl-diacetylchitobiosyl)-L-asparagine (protein)	Water+(N-acetyl-D-glucosaminyl-(alpha-D-mannosyl)4-beta-D-mannosyl-diacetylchitobiosyl)-L-asparagine (protein)	
 mannosyl-oligosaccharide glucosidase, endoplasmic reticulum		False	False	D-glucose+(alpha-D-mannosyl)8-beta-D-mannosyl-diacetylchitobiosyl-L-asparagine (protein)	Water+(alpha-D-Glucosyl)-(alpha-D-mannosyl)8-beta-D-mannosyl-diacetylchitobiosyl-L-asparagine (protein)	
 mesaconate--CoA ligase (ADP-forming), mitochondrial	6.2.1.5	False	False	ADP+hydrogenphosphate+Mesaconyl-CoA	Coenzyme A+ATP+Mesaconate	
-mesaconate--CoA ligase (GDP-forming)	6.2.1.4	True	True	hydrogenphosphate+GDP+Mesaconyl-CoA	Coenzyme A+GTP+Mesaconate	
+mesaconate--CoA ligase (GDP-forming)	6.2.1.4	False	False	hydrogenphosphate+GDP+Mesaconyl-CoA	Coenzyme A+GTP+Mesaconate	
 methenyltetrahydrifikate cyclohydrolase, mitochondrial	3.5.4.9	True	True	10-Formyltetrahydrofolate+proton	Water+5,10-Methenyltetrahydrofolate	
 methenyltetrahydrofolate cyclohydrolase	3.5.4.9	True	True	10-Formyltetrahydrofolate+proton	Water+5,10-Methenyltetrahydrofolate	
 methionine adenosyltransferase		True	True	hydrogenphosphate+S-Adenosyl-L-methionine+Diphosphate	Water+ATP+L-methionine	
 methionine synthase	2.1.1.13	False	False	proton+5,6,7,8-Tetrahydrofolate+L-methionine	5-Methyltetrahydrofolate+L-homocysteine	
-methyglyoxylate synthase 2 (from g3p)	4.2.3.3	True	True	hydrogenphosphate+methylglyoxal	Glyceraldehyde 3-phosphate	
+methyglyoxylate synthase 2 (from g3p)	4.2.3.3	False	False	hydrogenphosphate+methylglyoxal	Glyceraldehyde 3-phosphate	
 methylcrotonoyl-CoA carboxylase, mitochondrial	6.4.1.4	True	True	proton+ADP+hydrogenphosphate+trans-3-methylglutaconyl-CoA(5-)	ATP+Bicarbonate+3-methylbut-2-enoyl-CoA(4-)	
 methylenetetrahydrofolate dehydrogenase (NAD)	1.5.1.5	False	False	Nicotinamide adenine dinucleotide+5,10-Methenyltetrahydrofolate	Nicotinamide adenine dinucleotide+5,10-Methylenetetrahydrofolate	
 methylenetetrahydrofolate dehydrogenase (NAD), mitochondrial	1.5.1.5	False	False	Nicotinamide adenine dinucleotide+5,10-Methenyltetrahydrofolate	Nicotinamide adenine dinucleotide+5,10-Methylenetetrahydrofolate	
 methylenetetrahydrofolate dehydrogenase (NADP)	1.5.1.5	False	False	Nicotinamide adenine dinucleotide phosphate+5,10-Methenyltetrahydrofolate	Nicotinamide adenine dinucleotide phosphate+5,10-Methylenetetrahydrofolate	
 methylenetetrahydrofolate dehydrogenase (NADP), mitochondrial	1.5.1.5	False	False	Nicotinamide adenine dinucleotide phosphate+5,10-Methenyltetrahydrofolate	Nicotinamide adenine dinucleotide phosphate+5,10-Methylenetetrahydrofolate	
-methylglutaconase, mitochondrial		True	True	Water+Mesaconyl-CoA	(3S)-citramalyl-CoA(5-)	
+methylglutaconase, mitochondrial		False	False	Water+Mesaconyl-CoA	(3S)-citramalyl-CoA(5-)	
 methylglutaconyl-CoA hydratase (reversible), mitochondrial	4.2.1.18	True	True	Hydroxymethylglutaryl-CoA	Water+trans-3-methylglutaconyl-CoA(5-)	
 methylglyoxal synthase	4.2.3.3	True	True	hydrogenphosphate+methylglyoxal	Dihydroxyacetone phosphate	
 methylmalonate-semialdehyde dehydrogenase	1.2.1.27	False	False	carbon dioxide+Nicotinamide adenine dinucleotide+Propanoyl-CoA	Coenzyme A+Nicotinamide adenine dinucleotide+2-methyl-3-oxopropanoate	
@@ -2506,7 +2506,7 @@ mevalonate kinase (atp)	2.7.1.36	True	True	proton+ADP+(R)-5-phosphonatomevalonat
 mevalonate kinase (atp) cytosol		True	True	ADP+proton+(R)-5-phosphonatomevalonate(3-)	ATP+(R)-mevalonate	
 monoacylglycerol acyltransferase		False	False	Coenzyme A+diglyceride	R total Coenzyme A+monoacylglycerol 2	
 monoamine oxidase (L-Normetanephrine)	1.4.3.4	True	True	Hydrogen peroxide+Ammonium+3-Methoxy-4-hydroxyphenylglycolaldehyde	Water+O2+L-Normetanephrine	
-myo-Inositol-1-phosphate synthase	5.5.1.4	True	True	1D-myo-inositol 1-phosphate(2-)	D-Glucose 6-phosphate	
+myo-Inositol-1-phosphate synthase	5.5.1.4	False	False	1D-myo-inositol 1-phosphate(2-)	D-Glucose 6-phosphate	
 myo-inositol 1-phosphatase	3.1.3.25	True	True	hydrogenphosphate+myo-inositol	Water+1D-myo-inositol 1-phosphate(2-)	
 myo-inositol 3-phosphatase	3.1.3.25	True	True	hydrogenphosphate+myo-inositol	Water+1D-myo-inositol 3-phosphate(2-)	
 myo-inositol 4-phosphatase	3.1.3.25	True	True	hydrogenphosphate+myo-inositol	Water+1D-myo-inositol 4-phosphate(2-)	
@@ -2552,10 +2552,10 @@ nucleoside-diphosphate kinase (ATP:dTDP), nuclear	2.7.4.6	True	True	ADP+dTTP	ATP
 nucleoside-diphosphate kinase (ATP:dUDP), mitochondrial	2.7.4.6	True	True	ADP+dUTP	ATP+dUDP	
 nucleoside-diphosphate kinase (ATP:dUDP), nuclear	2.7.4.6	True	True	ADP+dUTP	ATP+dUDP	
 nucleoside-triphosphatase (GTP)	3.6.1.15	True	True	proton+hydrogenphosphate+GDP	Water+GTP	
-nucleotide phosphatase	3.4.2.1	True	True	hydrogenphosphate+Nicotinate D-ribonucleoside	proton+Nicotinate+alpha-D-Ribose 1-phosphate	
+nucleotide phosphatase	3.4.2.1	False	False	hydrogenphosphate+Nicotinate D-ribonucleoside	proton+Nicotinate+alpha-D-Ribose 1-phosphate	
 oleoyl-ACP hydrolase  EC:2.3.1.85	2.3.1.85	False	False	acyl carrier protein+stearidonic acid C18:4, n-3	Water+Stearoyl-ACP	
 oligo-1,6-glucosidase (glygn4 -> glygn5), extracellular	3.2.1.10	False	False	D-glucose+glycogen, structure 5 (glycogenin-2[1,4-Glc])	Water+glycogen, structure 4 (glycogenin-1,6-{2[1,4-Glc], [1,4-Glc]})	
-oligo-1,6-glucosidase (strch2 ->strch3), extracellular	3.2.1.10	True	True	D-glucose+Maltose	Water+starch, structure 2 (1,6-{2[1,4-Glc], [1,4-Glc]})	
+oligo-1,6-glucosidase (strch2 ->strch3), extracellular	3.2.1.10	False	False	D-glucose+Maltose	Water+starch, structure 2 (1,6-{2[1,4-Glc], [1,4-Glc]})	
 ornithine carbamoyltransferase, irreversible	2.1.3.3	True	True	proton+hydrogenphosphate+L-citrulline	Ornithine+Carbamoyl phosphate	
 ornithine transaminase reversible (m)	2.6.1.13	True	True	L-glutamate(1-)+L-Glutamate 5-semialdehyde	2-Oxoglutarate+Ornithine	
 orotate phosphoribosyltransferase	2.4.2.10	True	True	5-Phospho-alpha-D-ribose 1-diphosphate+Orotate	Diphosphate+Orotidine 5'-phosphate	
@@ -2745,12 +2745,12 @@ retinyl ester hydrolase (9-cis)		False	False	proton+R total 2 position+9-cis-ret
 retinyl ester hydrolase (9-cis), extracellular		False	False	proton+9-cis-retinol+R total 2 position	Water+fatty acid 9-cis-retinol	
 retinyl ester hydrolase, extracellular		False	False	proton+retinol+R total 2 position	Water+fatty acid retinol	
 riboflavin kinase		True	True	ADP+proton+FMN	ATP+Riboflavin	
-ribokinase		True	True	ADP+proton+alpha-D-Ribose 5-phosphate	ATP+D-ribose	
+ribokinase		False	False	ADP+proton+alpha-D-Ribose 5-phosphate	ATP+D-ribose	
 ribonucleoside-diphosphate reductase (ADP)	1.7.14.1	False	False	Water+dADP+Oxidized thioredoxin	ADP+Reduced thioredoxin	
 ribonucleoside-diphosphate reductase (CDP)	1.7.14.1	False	False	Water+dCDP+Oxidized thioredoxin	CDP+Reduced thioredoxin	
 ribonucleoside-diphosphate reductase (GDP)	1.7.14.1	False	False	Water+dGDP+Oxidized thioredoxin	GDP+Reduced thioredoxin	
 ribonucleoside-diphosphate reductase (UDP)	1.7.14.1	False	False	Water+dUDP+Oxidized thioredoxin	UDP+Reduced thioredoxin	
-ribose-5-phosphate isomerase	5.3.1.6	True	True	D-ribulose 5-phosphate(2-)	alpha-D-Ribose 5-phosphate	
+ribose-5-phosphate isomerase	5.3.1.6	False	False	D-ribulose 5-phosphate(2-)	alpha-D-Ribose 5-phosphate	
 ribosylnicotinamide kinase	2.7.1.22	True	True	ADP+proton+NMN	ATP+N-Ribosylnicotinamide	
 ribulose 5-phosphate 3-epimerase	5.1.3.1	True	True	D-xylulose 5-phosphate(2-)	D-ribulose 5-phosphate(2-)	
 saccharopine dehydrogenase (NAD, L-glutamate forming), mitochondrial	1.5.1.10	False	False	proton+Nicotinamide adenine dinucleotide phosphate+L-glutamate(1-)+L-allysine	Water+Nicotinamide adenine dinucleotide phosphate+L-saccharopinate(1-)	
@@ -2826,15 +2826,15 @@ trans-Hex-2-enoyl-CoA reductase Fatty acid elongation in mitochondria EC:1.3.1.3
 trans-Hexadec-2-enoyl-CoA reductase Fatty acid elongation in mitochondria EC:1.3.1.38	1.3.1.38	False	False	proton+Nicotinamide adenine dinucleotide phosphate+trans-Hexadec-2-enoyl-CoA	Nicotinamide adenine dinucleotide phosphate+Palmitoyl-CoA (n-C16:0CoA)	
 trans-Oct-2-enoyl-CoA reductase Fatty acid elongation in mitochondria EC:1.3.1.38	1.3.1.38	False	False	proton+Nicotinamide adenine dinucleotide phosphate+(2E)-Octenoyl-CoA	Nicotinamide adenine dinucleotide phosphate+Octanoyl-CoA (n-C8:0CoA)	
 trans-Tetradec-2-enoyl-CoA reductase Fatty acid elongation in mitochondria EC:1.3.1.38	1.3.1.38	False	False	proton+Nicotinamide adenine dinucleotide phosphate+trans-tetradec-2-enoyl-CoA(4-)	Nicotinamide adenine dinucleotide phosphate+Tetradecanoyl-CoA (n-C14:0CoA)	
-transaldolase	2.2.1.2	True	True	D-Fructose 6-phosphate+D-Erythrose 4-phosphate	Glyceraldehyde 3-phosphate+Sedoheptulose 7-phosphate	
-transketolase	2.2.1.1	True	True	Glyceraldehyde 3-phosphate+D-Fructose 6-phosphate	D-xylulose 5-phosphate(2-)+D-Erythrose 4-phosphate	
+transaldolase	2.2.1.2	False	False	D-Fructose 6-phosphate+D-Erythrose 4-phosphate	Glyceraldehyde 3-phosphate+Sedoheptulose 7-phosphate	
+transketolase	2.2.1.1	False	False	Glyceraldehyde 3-phosphate+D-Fructose 6-phosphate	D-xylulose 5-phosphate(2-)+D-Erythrose 4-phosphate	
 transport of 11-octadecenoyl carnitine into the mitochondrial matrix		False	False	L-Carnitine+11-octadecenoylcoa	Coenzyme A+11-octadecenoyl carnitine	
 transport of Hexadecenoyl-CoA into mitochondrial matrix		False	False	L-Carnitine+Hexadecenoyl-CoA (n-C16:1CoA)	Coenzyme A+Hexadecenoyl carnitine	
 transport of Octadecenoyl-CoA into mitochondrial matrix		False	False	L-Carnitine+octadecenoylcoa	Coenzyme A+octadecenoyl carnitine (hypothetical, position of double bond unknown)	
 transport of butyryl carnitine in the mitochondrial matrix for final hydrolysis		False	False	Butanoyl-CoA+L-Carnitine	Coenzyme A+butyryl carnitine	
 trimethyllysine dioxygenase	1.14.11.8	True	True	carbon dioxide+Succinate+3-Hydroxy-N6,N6,N6-trimethyl-L-lysine	O2+2-Oxoglutarate+N6,N6,N6-Trimethyl-L-lysine	
-triokinase	2.7.1.28	True	True	ADP+proton+Glyceraldehyde 3-phosphate	ATP+D-Glyceraldehyde	
-triose-phosphate isomerase	5.3.1.1	True	True	Glyceraldehyde 3-phosphate	Dihydroxyacetone phosphate	
+triokinase	2.7.1.28	False	False	ADP+proton+Glyceraldehyde 3-phosphate	ATP+D-Glyceraldehyde	
+triose-phosphate isomerase	5.3.1.1	False	False	Glyceraldehyde 3-phosphate	Dihydroxyacetone phosphate	
 tyrosine 3-monooxygenase	1.14.16.2	False	False	L-dopa+4a-hydroxytetrahydrobiopterin	O2+5,6,7,8-tetrahydrobiopterin+L-tyrosine	
 tyrosine transaminase	2.6.1.5	True	True	3-(4-hydroxyphenyl)pyruvate+L-glutamate(1-)	2-Oxoglutarate+L-tyrosine	
 tyrosine transaminase, mitochondrial	2.6.1.5	True	True	3-(4-hydroxyphenyl)pyruvate+L-glutamate(1-)	2-Oxoglutarate+L-tyrosine	
@@ -2850,7 +2850,7 @@ uptake of vaccenic acid by cells		True	True	AMP+Diphosphate+11-octadecenoylcoa	A
 uridine diphosphoacetylgalactosamine-chondroitin acetylgalactosaminyltransferase II, Golgi	2.4.1.175	False	False	proton+UDP+chondroitin sulfate E (GalNAc4,6diS-GlcA), precursor 4	UDP-N-acetyl-alpha-D-glucosamine(2-)+chondroitin sulfate E (GalNAc4,6diS-GlcA), precursor 3	
 uridine kinase (ATP:Uridine)	2.7.1.48	True	True	ADP+proton+UMP	ATP+Uridine	
 uridylate kinase (dUMP), mitochondrial		True	True	ADP+dUDP	ATP+dUMP	
-uronolactonase, endoplasmic reticulum	3.1.1.19	True	True	Water+D-glucurono-6,3-lactone	proton+D-glucuronate	
+uronolactonase, endoplasmic reticulum	3.1.1.19	False	False	Water+D-glucurono-6,3-lactone	proton+D-glucuronate	
 uronyl 2-sulfotransferase, Golgi		False	False	proton+adenosine 3',5'-bismonophosphate(4-)+GlcN2S-IdoA-GlcN2S-GlcA2S-GlcN2S-IdoA2S-GlcN2S-GlcA-GlcNAc-GlcA-Gal-Gal-Xyl-L-Ser (protein)	(2R,3S,4R,5R)-5-(6-amino-9H-purin-9-yl)-4-hydroxy-2-({[(sulfonatooxy)phosphinato]oxy}methyl)oxolan-3-yl phosphate+(GlcN2S-IdoA-GlcN2S-GlcA)2-GlcNAc-GlcA-Gal-Gal-Xyl-L-Ser (protein)	
 uroporphyrinogen decarboxylase (uroporphyrinogen III)	4.1.1.37	True	True	carbon dioxide+Coproporphyrinogen III	proton+Uroporphyrinogen III	
 uroporphyrinogen-III synthase	4.2.1.75	True	True	Water+Uroporphyrinogen III	Hydroxymethylbilane	

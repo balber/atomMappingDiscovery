@@ -8,14 +8,27 @@ class Comperator(object):
     
     def matchAllMets(self,NameToMetRecon, NameToMetMeta):
         for reconMet in NameToMetRecon.values():
-            for metaCycMet in NameToMetMeta.values():
-                if reconMet.equals(metaCycMet):
-                    reconMet.metaCycMetList.append(metaCycMet)    
-
+            formulaEqualeSet = set()
+            idEqualset = set()
+            for metaCycMet in NameToMetMeta.values(): 
+                if reconMet.cmpFormula(metaCycMet):
+                    formulaEqualeSet.add(metaCycMet)
+                if reconMet.cmpIds(metaCycMet):
+                    idEqualset.add(metaCycMet)
+            
+            intersectionSet = idEqualset & formulaEqualeSet
+            if len(intersectionSet) != 0:
+                reconMet.metaCycMetSet =  intersectionSet 
+            else:
+                if len(idEqualset) == 0:
+                    reconMet.metaCycMetSet = formulaEqualeSet
+                else:
+                    reconMet.metaCycMetSet = idEqualset
+            
     def cpmReactionList(self,reconList , metaList):
         for met1 in reconList:
             isOk = False
-            if met1.metaCycMetList == []:
+            if len(met1.metaCycMetSet)==0:
                 return False
             for met2 in metaList:
                 if met1.isMyName(met2.name):

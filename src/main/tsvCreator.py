@@ -24,9 +24,9 @@ class tsvCreator(object):
         
         for met in NameToMetRecon.values():
             
-            if met.metaCycMetList != []:
+            if len(met.metaCycMetSet) != 0:
                 names=[]
-                for met1 in met.metaCycMetList:
+                for met1 in met.metaCycMetSet:
                     names.append(met1.name)
                 names = '  ;  '.join(names)
                 file.write( met.name + '\t' + 'True\t' +' '.join(met.ids)+ '\t' + names + '\t'+met.formula.replace("\n","")+'\n')

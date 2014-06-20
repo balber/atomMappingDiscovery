@@ -8,7 +8,7 @@ class Metabolite(object):
 
     def __init__(self, line=''):
         self.name=""
-        self.metaCycMetList=[]
+        self.metaCycMetSet=set()
         self.ids=[]
         self.reactionList=[]
         self.formula=""
@@ -54,14 +54,13 @@ class Metabolite(object):
                     return True
         return False
             
-    
-    
+        
     def equals(self, met):
         
         return self.cmpFormula(met) or self.cmpIds(met)
         
     def isMyName(self,name):
-        for met in self.metaCycMetList:
+        for met in self.metaCycMetSet:
             if met.name == name:
                 return True
         return False
