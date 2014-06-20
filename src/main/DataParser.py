@@ -20,7 +20,7 @@ class DataParser(object):
         ins.close()
         print(len(reconNameToMetMap.keys()))
         
-        ins = open(    RESOURCE_PATH_PREFIX + 'reconMetsFormulas.tsv')
+        ins = open(RESOURCE_PATH_PREFIX + 'reconMetsFormulas.tsv')
         for line in ins:
             values = line.split('\t')
             if values[0] in reconNameToMetMap.keys():
@@ -82,39 +82,8 @@ class DataParser(object):
         print('meta reactions: ')
         print(counter)                        
         return fullReactions, partialReactions
-
-    
-    def matchReactions(self,reconReactions , metaCycReactions):
-        counter = 0
-        
-        for recon in reconReactions:
-            for meta in metaCycReactions:
-                if (self.cpmReactionList(recon.left,meta.left) and self.cpmReactionList(recon.right,meta.right)) or (self.cpmReactionList(recon.left,meta.right) and self.cpmReactionList(recon.right,meta.left)):
-                #if compareReactionsLeftToRight(recon , meta) or cmpReactionsRightToLeft(recon,meta):
-                    recon.atomMapping = meta.atomMapping
-                    recon.hasMatch=True
-                    if  meta.atomMapping != [] :   
-                        counter = counter +1
-                    break
-        print(counter)        
     
     
-    def cpmReactionList(self,reconList , metaList):
-        for met1 in reconList:
-            isOk = False
-            if met1.metaCycMetList == []:
-                return False
-            for met2 in metaList:
-                if met1.isMyName(met2.name):
-                    isOk=True
-                    break
-                    
-            if(not isOk):
-                return False    
-        
-        return True
-    
-     
     def setCompoundsMetaCycCreate(self,fileName):
     #from sets import Set
         set1 = set()
@@ -127,25 +96,3 @@ class DataParser(object):
                 
         return set1 
      
-    def matchAllMets(self,NameToMetRecon, NameToMetMeta):
-        for reconMet in NameToMetRecon.values():
-            for metaCycMet in NameToMetMeta.values():
-                if reconMet.equals(metaCycMet):
-                    reconMet.metaCycMetList.append(metaCycMet)
-    
-      
-    
-   
-       
-#     def matchPartial(self,reconPartial, metaCycReactions):
-#         counter = 0
-#         for recon in reconPartial:
-#             for meta in metaCycReactions:
-#                 if self.comparePartialReactionsLeftToRight(recon , meta) or self.cmpPartialReactionsRightToLeft(recon,meta):
-#                     recon.atomMapping = meta.atomMapping
-#                     if  meta.atomMapping != [] :   
-#                         counter = counter +1
-#                     break
-#         print(counter)        
-    
-                            

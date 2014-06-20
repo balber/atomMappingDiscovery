@@ -5,13 +5,14 @@ Created on Jun 20, 2014
 '''
 from main.DataParser import DataParser, RESOURCE_PATH_PREFIX
 from main.tsvCreator import tsvCreator
-
+from main.Comperator import Comperator
 
 
 if __name__ == '__main__':
     
     
     parser = DataParser()
+    comperator = Comperator()
     compoundSet = parser.setCompoundsMetaCycCreate(RESOURCE_PATH_PREFIX + 'compounds.dat')
     
     tsvcreator = tsvCreator(compoundSet)
@@ -20,7 +21,7 @@ if __name__ == '__main__':
     
     NameToMetRecon = parser.createReconMetsMap(RESOURCE_PATH_PREFIX+'names.tsv')
     
-    parser.matchAllMets(NameToMetRecon,NameToMetMeta)
+    comperator.matchAllMets(NameToMetRecon,NameToMetMeta)
     tsvcreator.createMetsTsv(NameToMetRecon)
     
     
@@ -31,5 +32,7 @@ if __name__ == '__main__':
     
     #matchPartial(reconPartial , metaCycReactions)
     
-    parser.matchReactions(reconReactions , metaCycReactions)
+    comperator.matchReactions(reconReactions , metaCycReactions)
     tsvcreator.createTsvFile(RESOURCE_PATH_PREFIX+'reactions.tsv',reconReactions)
+    
+    
