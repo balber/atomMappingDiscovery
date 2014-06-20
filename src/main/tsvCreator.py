@@ -4,6 +4,7 @@ Created on May 27, 2014
 @author: michael_bal
 '''
 from main.Reaction import Reaction
+from main.DataParser import RESOURCE_PATH_PREFIX
 
 class tsvCreator(object):
 
@@ -17,7 +18,7 @@ class tsvCreator(object):
             file.write(reaction.getAsTabSeperatedLine()+'\n')
             
     def createMetsTsv(self,NameToMetRecon):
-        file = open('metabolites.tsv',"w+t")
+        file = open(RESOURCE_PATH_PREFIX + 'metabolites.tsv',"w+t")
         file.write('recon name\t' + 'has match in metaCyc\t' + 'ids\n')
         c=0
         
@@ -28,7 +29,7 @@ class tsvCreator(object):
                 for met in met.metaCycMetList:
                     names.append(met.name)
                 names = '  ;  '.join(names)
-                file.write( met.name + '\t' + 'True\t' +' '.join(met.ids)+ '\t' + names + '\t'+met.formula+'\n')
+                file.write( met.name + '\t' + 'True\t' +' '.join(met.ids)+ '\t' + names + '\t'+met.formula.replace("\n","")+'\n')
                 c=c+1
             else:
                 file.write( met.name+ '\t' + 'False\t' +' '.join(met.ids)+ '\n')

@@ -26,17 +26,7 @@ class Reaction:
             line = line.split('\n')[0]
             strs = line.split(' - ')
             if strs[0] in self.options.keys():
-                self.options[strs[0]](strs[1])
-                
-            #if 'reactionRunningCounter' in line:
-            #   self.recNum = line.split(':')[1]
-       # for idlist in self.left:
-        #    mySet = set()
-         #   for s in idlist:
-          #      mySet.add(s.lower())
-           # if len(idlist)>0 and len( compundSet & mySet)==0:
-            #    self.missingMets.append(idlist[0])
-            
+                self.options[strs[0]](strs[1])          
          
         self.nameToIdMap ={}    #we only used it for construction but we dont want to save it
 
