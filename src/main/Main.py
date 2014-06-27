@@ -6,7 +6,7 @@ Created on Jun 20, 2014
 from main.DataParser import DataParser, RESOURCE_PATH_PREFIX
 from main.tsvCreator import tsvCreator
 from main.Comperator import Comperator
-
+from main.html import HTML
 
 if __name__ == '__main__':
     
@@ -21,22 +21,18 @@ if __name__ == '__main__':
     
     NameToMetRecon = parser.createReconMetsMap(RESOURCE_PATH_PREFIX+'names.tsv')
     
-    htmString = tsvcreator.metsToHtml(NameToMetRecon.values())
-    file = open('mets.htm','w+t')
-    file.write(str(htmString))
-    file.close()
-    print('finish html')
+#     htmString = tsvcreator.listToHtml(NameToMetRecon.values(),'metabolites:')
+#     file = open('mets.htm','w+t')
+#     file.write(str(htmString))
+#     file.close()
+#     print('finish html')
     comperator.matchAllMets(NameToMetRecon,NameToMetMeta)
     tsvcreator.createMetsTsv(NameToMetRecon)
     
     
     reconReactions, reconPartial = parser.extractAllReactions(RESOURCE_PATH_PREFIX +'recon2ReactionsByNameFiltered.txt',NameToMetRecon,compoundSet)
     print(len(reconReactions))
-    htmString = tsvcreator.metsToHtml(reconReactions)
-    file = open('reacs.htm','w+t')
-    file.write(str(htmString))
-    file.close()
-    print('finish reactions html')
+    
     metaCycReactions , p = parser.extractAllReactions(RESOURCE_PATH_PREFIX + 'reactions.dat',NameToMetMeta,compoundSet)
     print(len(metaCycReactions))
     
@@ -45,4 +41,28 @@ if __name__ == '__main__':
     comperator.matchReactions(reconReactions , metaCycReactions)
     tsvcreator.createTsvFile(RESOURCE_PATH_PREFIX+'reactions.tsv',reconReactions)
     
+#     htmString = tsvcreator.listToHtml(reconReactions,'reactions:')
+#     file = open('reacs.htm','w+t')
+#     file.write(str(htmString))
+#     file.close()
+#     print('finish reactions html')
+    
+    
+    h=HTML('html')
+    #h += HTML('body','hi')
+    bod = h.body
+    div1 = bod.div
+    div1.h1('Metabolites:')
+    for met in NameToMetRecon.values():
+        div1 += met.toHtml()
+    
+    div2 = bod.div
+    div2.h1('Reactions:')
+    for reac in reconReactions:
+        div2 += reac.toHtml() 
+    
+    file = open('all data.htm','w+t')
+    file.write(str(h))
+    file.close()
+    print('finish reactions html')
     

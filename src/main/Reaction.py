@@ -101,17 +101,26 @@ class Reaction:
     def toHtml(self):
         h = HTML()
         l=h.li
-        l.p('name: ' + self.name)
+        l.h3('name: ' + self.name)
         #l.p('has atom mapping: ' + self.atomMapping!=[])
         l.p('ecn: ' + self.ecn)
-        txt = ''
+        l.p('has metaCyc Match: ' +  str(self.hasMatch))
+        par = l.p( 'left:' ,newlines=False)
         for met in self.left:
-            txt += met.name
-            txt += ' + '
-        
-        txt+= ' -> '
+            par.a(met.name + '  +  ' , href='#'+met.name)
+         
+        par = l.p( 'right:' ,newlines=False)
         for met in self.right:
-            txt += met.name
-            txt += ' + '
-        l.p(txt)    
+            par.a(met.name + '  +  ' , href='#'+met.name)   
+#         txt = ''
+#         for met in self.left:
+#             txt += met.name
+#             txt += ' + '
+#         txt = txt[:-3]
+#         txt+= ' -> '
+#         for met in self.right:
+#             txt += met.name
+#             txt += ' + '
+#         txt = txt[:-3]
+#        l.p(txt)    
         return h

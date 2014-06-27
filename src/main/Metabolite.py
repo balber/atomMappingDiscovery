@@ -17,7 +17,7 @@ class Metabolite(object):
         if line != '':
             values = line.split("\t")
             self.name = values[0].replace("\n","")
-            self.ids.append(self.name)
+            #self.ids.append(self.name)
             for id1 in values[1:]:
                 if id1 != "" and id1 != "\n":
                     if "\n" in id1:
@@ -71,9 +71,13 @@ class Metabolite(object):
     def toHtml(self):
         h = HTML()
         l=h.li
-        l.p('name: ' + self.name)
+        l.h3.a('name: ' + self.name, id=self.name)
         l.p('formula: ' + self.formula)
-        
+        idsStr=''
+        for id1 in self.ids:
+            idsStr+=id1
+            idsStr+='    ;    '
+        l.p('ids: ' + idsStr)
         #l = h.ul
         #l.li(self.name)
         #l.li(self.formula)
