@@ -3,6 +3,7 @@ Created on Jun 16, 2014
 
 @author: michael_bal
 '''
+from main.html import HTML
 
 class Metabolite(object):
 
@@ -26,7 +27,6 @@ class Metabolite(object):
 
     def setFormulaFromString(self, formulaStr):
         import re
-        self.formula=formulaStr
         molecules = re.findall("[A-Z][a-z]*[0-9]*", formulaStr)
         for molecule in molecules:
             number = re.split("[A-Z][a-z]*",molecule)[1]
@@ -34,6 +34,9 @@ class Metabolite(object):
             if number == '':
                 number="1"
             self.formulaMap[name] = number
+            self.formula+=name
+            self.formula+=number
+
 
 
     def cmpFormula(self, met):
@@ -65,4 +68,19 @@ class Metabolite(object):
                 return True
         return False
         
+    def toHtml(self):
+        h = HTML()
+        l=h.li
+        l.p('name: ' + self.name)
+        l.p('formula: ' + self.formula)
         
+        #l = h.ul
+        #l.li(self.name)
+        #l.li(self.formula)
+        return h
+        
+        #print(h)
+
+
+met = Metabolite()
+met.toHtml()            

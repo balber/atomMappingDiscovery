@@ -21,12 +21,22 @@ if __name__ == '__main__':
     
     NameToMetRecon = parser.createReconMetsMap(RESOURCE_PATH_PREFIX+'names.tsv')
     
+    htmString = tsvcreator.metsToHtml(NameToMetRecon.values())
+    file = open('mets.htm','w+t')
+    file.write(str(htmString))
+    file.close()
+    print('finish html')
     comperator.matchAllMets(NameToMetRecon,NameToMetMeta)
     tsvcreator.createMetsTsv(NameToMetRecon)
     
     
     reconReactions, reconPartial = parser.extractAllReactions(RESOURCE_PATH_PREFIX +'recon2ReactionsByNameFiltered.txt',NameToMetRecon,compoundSet)
     print(len(reconReactions))
+    htmString = tsvcreator.metsToHtml(reconReactions)
+    file = open('reacs.htm','w+t')
+    file.write(str(htmString))
+    file.close()
+    print('finish reactions html')
     metaCycReactions , p = parser.extractAllReactions(RESOURCE_PATH_PREFIX + 'reactions.dat',NameToMetMeta,compoundSet)
     print(len(metaCycReactions))
     

@@ -56,6 +56,8 @@ class DataParser(object):
                                 str1 = str1[1].split("(")[1].split(")")[0] #str1 = C 12  
                                 strs = str1.split(" ")
                                 met.formulaMap[strs[0]] = strs[1]
+                                met.formula+=strs[0]
+                                met.formula+=strs[1]
                                 
                     if(met.ids != [] and met.name != ''):
                         myMap[met.name] = met

@@ -3,6 +3,8 @@ Created on May 12, 2014
 
 @author: michael_bal
 '''
+from main.html import HTML
+
 class Reaction:
 
     def __init__(self,group,nameToMetMap,compundSet):
@@ -95,3 +97,21 @@ class Reaction:
     @staticmethod
     def getTsvColumnsNames():
         return '\t'.join(['reaction name' , 'ECN','has match in metaCyc','contains atom mapping','left mets','right mets','missingMets'])+'\n'
+    
+    def toHtml(self):
+        h = HTML()
+        l=h.li
+        l.p('name: ' + self.name)
+        #l.p('has atom mapping: ' + self.atomMapping!=[])
+        l.p('ecn: ' + self.ecn)
+        txt = ''
+        for met in self.left:
+            txt += met.name
+            txt += ' + '
+        
+        txt+= ' -> '
+        for met in self.right:
+            txt += met.name
+            txt += ' + '
+        l.p(txt)    
+        return h

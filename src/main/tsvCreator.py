@@ -5,6 +5,7 @@ Created on May 27, 2014
 '''
 from main.Reaction import Reaction
 from main.DataParser import RESOURCE_PATH_PREFIX
+from main.html import HTML
 
 class tsvCreator(object):
 
@@ -38,4 +39,18 @@ class tsvCreator(object):
         file.close()
         
 
-
+    
+    def metsToHtml(self,list1):    
+        h=HTML('html')
+        #h += HTML('body','hi')
+        bod = h.body.ol
+        for element in list1:
+            bod += element.toHtml()
+        
+        return h
+        
+        
+        
+        
+        
+        
