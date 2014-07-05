@@ -7,7 +7,8 @@ Created on Jun 20, 2014
 class Comperator(object):
     
     def matchAllMets(self,NameToMetRecon, NameToMetMeta):
-        for reconMet in NameToMetRecon.values():
+        reconMets = NameToMetRecon.values()
+        for reconMet in reconMets:
             formulaEqualeSet = set()
             idEqualset = set()
             for metaCycMet in NameToMetMeta.values(): 
@@ -16,16 +17,24 @@ class Comperator(object):
                 if reconMet.cmpIds(metaCycMet):
                     idEqualset.add(metaCycMet)
             
-            intersectionSet = idEqualset & formulaEqualeSet
-            if len(intersectionSet) != 0:
-                reconMet.metaCycMetSet =  intersectionSet 
+            if len(formulaEqualeSet) == 0:
+                reconMet.metaCycMetSet = idEqualset
             else:
-                if len(idEqualset) == 0:
-                    reconMet.metaCycMetSet = formulaEqualeSet
-                else:
-                    reconMet.metaCycMetSet = idEqualset
+                reconMet.metaCycMetSet = formulaEqualeSet
+#             intersectionSet = idEqualset & formulaEqualeSet
+#             if len(intersectionSet) != 0:
+#                 reconMet.metaCycMetSet =  intersectionSet 
+#             else:
+#                 if len(idEqualset) == 0:
+#                     reconMet.metaCycMetSet = formulaEqualeSet
+#                 else:
+#                     reconMet.metaCycMetSet = idEqualset
+            old = reconMet
             
     def cpmReactionList(self,reconList , metaList):
+        if len(reconList)!=len(metaList):
+            return False
+        
         for met1 in reconList:
             isOk = False
             if len(met1.metaCycMetSet)==0:
@@ -49,8 +58,9 @@ class Comperator(object):
                 #if compareReactionsLeftToRight(recon , meta) or cmpReactionsRightToLeft(recon,meta):
                     recon.atomMapping = meta.atomMapping
                     recon.hasMatch=True
-                    if  meta.atomMapping != [] :   
-                        counter = counter +1
+                    counter = counter +1
+                    #if  meta.atomMapping != [] :   
+                        
                     break
         print(counter)                      
 

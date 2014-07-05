@@ -5,6 +5,8 @@ Created on Jun 16, 2014
 '''
 from main.html import HTML
 
+METACYC_COMPOUND_PREFIX='http://metacyc.org/META/NEW-IMAGE?type=COMPOUND&object='
+KEGG_PREFIX='http://www.genome.jp/dbget-bin/www_bget?cpd:'
 class Metabolite(object):
 
     def __init__(self, line=''):
@@ -31,6 +33,7 @@ class Metabolite(object):
         for molecule in molecules:
             number = re.split("[A-Z][a-z]*",molecule)[1]
             name = molecule.replace(number,"")
+            name = name.upper()
             if number == '':
                 number="1"
             self.formulaMap[name] = number
@@ -40,6 +43,9 @@ class Metabolite(object):
 
 
     def cmpFormula(self, met):
+        if len(self.formulaMap.keys()) == 0:
+            return False
+        
         if len(self.formulaMap.keys()) != len(met.formulaMap.keys()):
             return False
         
@@ -72,18 +78,34 @@ class Metabolite(object):
         h = HTML()
         l=h.li
         l.h3.a('name: ' + self.name, id=self.name)
+        l.p('has MetaCyc match: ' + str(len(self.metaCycMetSet)!=0))
         l.p('formula: ' + self.formula)
+        
+        hasKegg = False
         idsStr=''
         for id1 in self.ids:
             idsStr+=id1
             idsStr+='    ;    '
+            if id1.startswith('C'):
+                hasKegg=True
+                keggId=id1
         l.p('ids: ' + idsStr)
-        #l = h.ul
-        #l.li(self.name)
-        #l.li(self.formula)
+        if hasKegg:
+            l.p.a('kegg link' , href=KEGG_PREFIX+keggId)
+#         metaCycNames=''
+#         for met in self.metaCycMetSet:
+#             metaCycNames+=met.name
+#             metaCycNames+='    ;    '
+#         l.p('metaCyc posible matches: ' + metaCycNames)
+#         
+        par = l.p('metaCyc posible matches: ')
+        for met in self.metaCycMetSet:
+            par.a(met.name + '  ;  ' , href=METACYC_COMPOUND_PREFIX+met.name)
+
+        par = l.p('recon reactions: ')
+        for reac in self.reactionList:
+            par.a(reac.toLine()+'\n' , href='#'+reac.name)
         return h
-        
-        #print(h)
 
 
 met = Metabolite()

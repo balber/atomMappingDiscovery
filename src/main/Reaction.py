@@ -101,26 +101,42 @@ class Reaction:
     def toHtml(self):
         h = HTML()
         l=h.li
-        l.h3('name: ' + self.name)
-        #l.p('has atom mapping: ' + self.atomMapping!=[])
+        l.h3.a('name: ' + self.name, id=self.name)
+        l.p('has atom mapping: ' + str(self.atomMapping!=[]))
         l.p('ecn: ' + self.ecn)
-        l.p('has metaCyc Match: ' +  str(self.hasMatch))
+        l.p('has metaCyc match: ' +  str(self.hasMatch))
         par = l.p( 'left:' ,newlines=False)
         for met in self.left:
-            par.a(met.name + '  +  ' , href='#'+met.name)
+            if len(met.metaCycMetSet)==0:
+                par.a(href='#'+met.name).font(met.name + '  +  ',color="red")
+            else:
+                par.a(met.name + '  +  ' , href='#'+met.name)
          
         par = l.p( 'right:' ,newlines=False)
         for met in self.right:
-            par.a(met.name + '  +  ' , href='#'+met.name)   
-#         txt = ''
-#         for met in self.left:
-#             txt += met.name
-#             txt += ' + '
-#         txt = txt[:-3]
-#         txt+= ' -> '
-#         for met in self.right:
-#             txt += met.name
-#             txt += ' + '
-#         txt = txt[:-3]
-#        l.p(txt)    
+            if len(met.metaCycMetSet)==0:
+                par.a(href='#'+met.name).font(met.name + '  +  ',color="red")
+            else:
+                par.a(met.name + '  +  ' , href='#'+met.name)#         txt = ''
         return h
+   
+
+    def toLine(self):
+        txt=''
+        for met in self.left:
+            if met == None:
+                txt += '_____'
+            else:
+                txt += met.name
+            txt += ' + '
+        txt = txt[:-3]
+        txt+= ' -> '
+        for met in self.right:
+            if met == None:
+                txt += '_____'
+            else:
+                txt += met.name
+            txt += ' + '
+        txt = txt[:-3]
+        
+        return txt  

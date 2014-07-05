@@ -7,6 +7,8 @@ from main.DataParser import DataParser, RESOURCE_PATH_PREFIX
 from main.tsvCreator import tsvCreator
 from main.Comperator import Comperator
 from main.html import HTML
+import pdb
+
 
 if __name__ == '__main__':
     
@@ -27,6 +29,12 @@ if __name__ == '__main__':
 #     file.close()
 #     print('finish html')
     comperator.matchAllMets(NameToMetRecon,NameToMetMeta)
+#     pdb.set_trace()
+#     for met in NameToMetRecon.values():
+#         print(len(met.metaCycMetSet))
+#         pdb.set_trace()
+#     
+#     pdb.set_trace()
     tsvcreator.createMetsTsv(NameToMetRecon)
     
     
@@ -61,7 +69,7 @@ if __name__ == '__main__':
     for reac in reconReactions:
         div2 += reac.toHtml() 
     
-    file = open('all data.htm','w+t')
+    file = open(RESOURCE_PATH_PREFIX+'all data.htm','w+t')
     file.write(str(h))
     file.close()
     print('finish reactions html')
