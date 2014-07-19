@@ -5,7 +5,7 @@ Created on May 6, 2014
 '''
 from main.Metabolite import Metabolite
 from main.Reaction import Reaction
-
+import re
 RESOURCE_PATH_PREFIX = "..\\resources\\"
 
 
@@ -49,7 +49,8 @@ class DataParser(object):
                             str1 = line.split(' - ')
                             id1 = str1[1].split('"')[1]
                             met.ids.append(id1)
-                                              
+                            if re.match("[cC][0-9]+", id1):
+                                met.keggId = id1.lower()
                         elif 'CHEMICAL-FORMULA' in line:
                             str1 = line.split(' - ')
                             if str1[1] != '':   #example str1[1] = (C 12)
@@ -64,7 +65,7 @@ class DataParser(object):
                         
         return myMap
     
-    def extractAllReactions(self,fileName,NameToMetMeta,compoundSet):
+    def extractAllReactions(self,fileName,NameToMetMeta):
         import itertools as it
         fullReactions = []
         partialReactions = []
@@ -73,7 +74,7 @@ class DataParser(object):
             for key,group in it.groupby(f,lambda line: line.startswith('//')):
                 if not key:
                     counter=counter+1
-                    reaction = Reaction(group,NameToMetMeta,compoundSet)
+                    reaction = Reaction(group,NameToMetMeta)
                     
                     if(reaction.left == [] or None in reaction.left or 
                         reaction.right == [] or None in reaction.right ):

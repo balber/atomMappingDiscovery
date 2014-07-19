@@ -3,33 +3,67 @@ Created on Jun 20, 2014
 
 @author: michael_bal
 '''
-
+import pdb
 class Comperator(object):
     
     def matchAllMets(self,NameToMetRecon, NameToMetMeta):
         reconMets = NameToMetRecon.values()
+        count=0
+        formulaCounter=0
+        a=0
         for reconMet in reconMets:
+#             if reconMet.name == "L-citrulline" :
+#                     a=1
+#                     pdb.set_trace()
             formulaEqualeSet = set()
             idEqualset = set()
-            for metaCycMet in NameToMetMeta.values(): 
+            keggEualSet = set()
+            for metaCycMet in NameToMetMeta.values():
+                
                 if reconMet.cmpFormula(metaCycMet):
                     formulaEqualeSet.add(metaCycMet)
+#                     if a==1:
+#                         pdb.set_trace()
                 if reconMet.cmpIds(metaCycMet):
                     idEqualset.add(metaCycMet)
-            
-            if len(formulaEqualeSet) == 0:
-                reconMet.metaCycMetSet = idEqualset
-            else:
-                reconMet.metaCycMetSet = formulaEqualeSet
+                    
+                if reconMet.cpmKegg(metaCycMet):
+                    keggEualSet.add(metaCycMet)
+#                     if a==1:
+#                         pdb.set_trace()
+#                         b=2
 #             intersectionSet = idEqualset & formulaEqualeSet
 #             if len(intersectionSet) != 0:
 #                 reconMet.metaCycMetSet =  intersectionSet 
 #             else:
-#                 if len(idEqualset) == 0:
+#                 if len(formulaEqualeSet) != 0:
 #                     reconMet.metaCycMetSet = formulaEqualeSet
 #                 else:
 #                     reconMet.metaCycMetSet = idEqualset
-            old = reconMet
+            
+            
+#             if len(formulaEqualeSet)==0:
+#                 reconMet.metaCycMetSet = idEqualset
+#                 if(len(idEqualset)!=0):
+#                     formulaCounter +=1
+#             else:
+#                 reconMet.metaCycMetSet = formulaEqualeSet
+            if  len(keggEualSet)  != 0:
+                reconMet.metaCycMetSet = keggEualSet
+            else:
+                if len(idEqualset) == 0:
+                    reconMet.metaCycMetSet = formulaEqualeSet
+                    if(len(formulaEqualeSet)!=0):
+                        formulaCounter +=1
+                else:
+                    reconMet.metaCycMetSet = idEqualset
+                
+                
+            if len(reconMet.metaCycMetSet)!=0:
+                count += 1
+        print('number of matched reactions is : ' + str(count) )
+        print('formulaCounter = ' + str(formulaCounter)) 
+            
             
     def cpmReactionList(self,reconList , metaList):
         if len(reconList)!=len(metaList):
@@ -58,6 +92,7 @@ class Comperator(object):
                 #if compareReactionsLeftToRight(recon , meta) or cmpReactionsRightToLeft(recon,meta):
                     recon.atomMapping = meta.atomMapping
                     recon.hasMatch=True
+                    recon.metaCycReaction = meta
                     counter = counter +1
                     #if  meta.atomMapping != [] :   
                         

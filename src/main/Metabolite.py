@@ -4,7 +4,7 @@ Created on Jun 16, 2014
 @author: michael_bal
 '''
 from main.html import HTML
-
+import re
 METACYC_COMPOUND_PREFIX='http://metacyc.org/META/NEW-IMAGE?type=COMPOUND&object='
 KEGG_PREFIX='http://www.genome.jp/dbget-bin/www_bget?cpd:'
 class Metabolite(object):
@@ -13,6 +13,8 @@ class Metabolite(object):
         self.name=""
         self.metaCycMetSet=set()
         self.ids=[]
+        self.keggId = ""
+        self.hasKeggIdMatch = False
         self.reactionList=[]
         self.formula=""
         self.formulaMap = {}
@@ -25,6 +27,8 @@ class Metabolite(object):
                     if "\n" in id1:
                         id1 = id1.replace("\n","")
                     self.ids.append(id1)
+                    if re.match("[cC][0-9]+", id1):
+                        self.keggId = id1.lower()
 
 
     def setFormulaFromString(self, formulaStr):
@@ -55,8 +59,14 @@ class Metabolite(object):
     
         return True
     
+    def cpmKegg(self,met):
+        if self.keggId == met.keggId and met.keggId!="":
+            self.hasKeggIdMatch = True
+            return True   
+        return False
     
-    def cmpIds(self, met):
+    def cmpIds(self, met):         
+        
         for id1 in self.ids:
             for id2 in met.ids:
                 if id1.lower() == id2.lower():
@@ -98,13 +108,13 @@ class Metabolite(object):
 #             metaCycNames+='    ;    '
 #         l.p('metaCyc posible matches: ' + metaCycNames)
 #         
-        par = l.p('metaCyc posible matches: ')
+        par = l.ul('metaCyc posible matches: ',newlines=True)
         for met in self.metaCycMetSet:
-            par.a(met.name + '  ;  ' , href=METACYC_COMPOUND_PREFIX+met.name)
+            par.li.a(met.name + '  ;  ' , href=METACYC_COMPOUND_PREFIX+met.name)
 
-        par = l.p('recon reactions: ')
+        par = l.ul('recon reactions: ',newlines=True)
         for reac in self.reactionList:
-            par.a(reac.toLine()+'\n' , href='#'+reac.name)
+            par.li.a(reac.toLine()+'\n' , href='#'+reac.name)
         return h
 
 

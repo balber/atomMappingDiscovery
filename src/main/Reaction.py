@@ -4,14 +4,15 @@ Created on May 12, 2014
 @author: michael_bal
 '''
 from main.html import HTML
-
+METACYC_REACTION_LINK_PREFIX = 'http://metacyc.org/META/new-image?type=REACTION&object='
 class Reaction:
 
-    def __init__(self,group,nameToMetMap,compundSet):
+    def __init__(self,group,nameToMetMap):
         self.atomMapping = []
         self.name=''
         self.ecn = ''
         self.hasMatch=False
+        self.metaCycReaction=None
         self.left=[]
         self.right=[]
         self.missingMets=[]
@@ -43,7 +44,6 @@ class Reaction:
         name = endLine.split('\t')[0]
         name = name.replace('|','')
         if(name not in self.nameToIdMap.keys()):
-            print(name)
             self.left.append(None)
             return
         
@@ -105,6 +105,10 @@ class Reaction:
         l.p('has atom mapping: ' + str(self.atomMapping!=[]))
         l.p('ecn: ' + self.ecn)
         l.p('has metaCyc match: ' +  str(self.hasMatch))
+        if self.metaCycReaction != None:
+            l.p.a('metaCyc reaction name: ' + self.metaCycReaction.uniqueId , href=METACYC_REACTION_LINK_PREFIX+ self.metaCycReaction.uniqueId)
+        else:
+            l.p('metaCyc reaction name: ')
         par = l.p( 'left:' ,newlines=False)
         for met in self.left:
             if len(met.metaCycMetSet)==0:
