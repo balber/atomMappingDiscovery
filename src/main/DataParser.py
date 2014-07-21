@@ -18,15 +18,15 @@ class DataParser(object):
             met = Metabolite(line)
             reconNameToMetMap[met.name] = met
         ins.close()
-        print(len(reconNameToMetMap.keys()))
+        #print(len(reconNameToMetMap.keys()))
         
         ins = open(RESOURCE_PATH_PREFIX + 'reconMetsFormulas.tsv')
         for line in ins:
             values = line.split('\t')
             if values[0] in reconNameToMetMap.keys():
                 reconNameToMetMap[values[0]].setFormulaFromString(values[1])
-            else:
-                print(values[0])
+            #else:
+                #print(values[0])
         ins.close()
         
         return reconNameToMetMap
@@ -44,7 +44,7 @@ class DataParser(object):
                         if 'UNIQUE-ID' in line:
                             name = line.split(' - ')[1]
                             met.name = name.replace("\n",'')                       
-                            met.ids.append(met.name)
+                            #met.ids.append(met.name)
                         elif 'DBLINKS' in line:
                             str1 = line.split(' - ')
                             id1 = str1[1].split('"')[1]

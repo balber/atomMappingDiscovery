@@ -19,7 +19,7 @@ class OutputFileCreator(object):
             
     def createMetsTsv(self,NameToMetRecon):
         file = open(RESOURCE_PATH_PREFIX + 'metabolites.tsv',"w+t")
-        file.write('recon name\t' + 'has match in metaCyc\t' + 'ids\n')
+        file.write('recon name\t' + 'has match in metaCyc\t' + 'ids\t' + 'number of reactions included' +'\n')
         for met in NameToMetRecon.values():
             
             if len(met.metaCycMetSet) != 0:
@@ -27,9 +27,9 @@ class OutputFileCreator(object):
                 for met1 in met.metaCycMetSet:
                     names.append(met1.name)
                 names = '  ;  '.join(names)
-                file.write( met.name + '\t' + 'True\t' +' '.join(met.ids)+ '\t' + names + '\t'+met.formula.replace("\n","")+'\n')
+                file.write( met.name + '\t' + 'True\t' +' '.join(met.ids)+ '\t' + str(len(met.reactionList)) + '\t' + names + '\t'+met.formula.replace("\n","")+'\n')
             else:
-                file.write( met.name+ '\t' + 'False\t' +' '.join(met.ids)+ '\n')
+                file.write( met.name+ '\t' + 'False\t' +' '.join(met.ids)+ '\t' + str(len(met.reactionList)) + '\n')
 
         file.close()
 

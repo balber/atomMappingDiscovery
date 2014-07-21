@@ -5,6 +5,7 @@ Created on Jun 16, 2014
 '''
 from main.html import HTML
 import re
+import pdb
 METACYC_COMPOUND_PREFIX='http://metacyc.org/META/NEW-IMAGE?type=COMPOUND&object='
 KEGG_PREFIX='http://www.genome.jp/dbget-bin/www_bget?cpd:'
 class Metabolite(object):
@@ -79,15 +80,19 @@ class Metabolite(object):
         return self.cmpFormula(met) or self.cmpIds(met)
         
     def isMyName(self,name):
+        #pdb.set_trace()        
         for met in self.metaCycMetSet:
+            #pdb.set_trace()
             if met.name == name:
+                #pdb.set_trace()
                 return True
+        #pdb.set_trace()
         return False
         
     def toHtml(self):
         h = HTML()
         l=h.li
-        l.h3.a('name: ' + self.name, id=self.name)
+        l.h3.a('Metabolite recon name: ' + self.name, id=self.name)
         l.p('has MetaCyc match: ' + str(len(self.metaCycMetSet)!=0))
         l.p('formula: ' + self.formula)
         

@@ -75,23 +75,21 @@ class Reaction:
         
     def getAsTabSeperatedLine(self):
         leftNames=[]
+        missingNames=""
         for met in self.left:
-            met = met.ids
-            if len(met)>0:
-                leftNames.append(met[0])
+            leftNames.append(met.name)
+            if len(met.metaCycMetSet)==0:
+                missingNames += met.name
+                missingNames += '    ;   '
         leftNames = '+'.join(leftNames)
         rightNames=[]
         for met in self.right:
-            met=met.ids
-            if len(met)>0:
-                rightNames.append(met[0])
+            rightNames.append(met.name)
+            if len(met.metaCycMetSet)==0:
+                missingNames += met.name
+                missingNames += '    ;   '
         rightNames = '+'.join(rightNames)
-        missingNames=[]
-        for name in self.missingMets:
-            if len(name)>0:
-                missingNames.append(name)
         
-        missingNames = '    ;   '.join(missingNames)
         return '\t'.join([self.name ,self.ecn ,str(self.hasMatch),str(self.atomMapping!=[]),leftNames,rightNames,missingNames])
     
     @staticmethod
@@ -101,10 +99,14 @@ class Reaction:
     def toHtml(self):
         h = HTML()
         l=h.li
-        l.h3.a('name: ' + self.name, id=self.name)
+        l.h3.a('Reaction recon name: ' + self.name, id=self.name)
         l.p('has atom mapping: ' + str(self.atomMapping!=[]))
         l.p('ecn: ' + self.ecn)
-        l.p('has metaCyc match: ' +  str(self.hasMatch))
+        
+        if self.hasMatch==False:
+            l.p.font('has metaCyc match: ' +  str(self.hasMatch),color="red")
+        else:
+            l.p.font('has metaCyc match: ' +  str(self.hasMatch),color="blue")
         if self.metaCycReaction != None:
             l.p.a('metaCyc reaction name: ' + self.metaCycReaction.uniqueId , href=METACYC_REACTION_LINK_PREFIX+ self.metaCycReaction.uniqueId)
         else:

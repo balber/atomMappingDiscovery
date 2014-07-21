@@ -1615,8 +1615,8 @@ Dolichyl beta-D-glucosyl phosphate, human liver homolog		15812
 Dolichyl beta-D-glucosyl phosphate, human uterine homolog		15812				
 Dolichol, human liver homolog		16091				
 Dolichol, human uterine homolog		16091				
-Dolichyl phosphate D-mannose, human liver homolog		15809				
-Dolichyl phosphate D-mannose, human uterine homolog		15809				
+Dolichyl phosphate D-mannose, human liver homolog		15809	C03862			
+Dolichyl phosphate D-mannose, human uterine homolog		15809	C03862			
 dolichyl phosphate(2-)		57683				
 dolichyl phosphate(2-)		57683				
 dopaminium(1+)	VYFYYTLLBUKUHU-UHFFFAOYSA-N	18243	HMDB00073	C03758	681	
@@ -1859,7 +1859,7 @@ gums
 guar gum-deoxyxholic acid complex						
 guar gum-glycocholate complex						
 guar gum-taurocholic acid complex						
-proton	GPRLSGONYQIRFK-FTGQXOHASA-N	15378	HMDB01362	C00282	1038	
+proton	GPRLSGONYQIRFK-FTGQXOHASA-N	15378	HMDB01362	C00080	1038	
 Hydrogen	UFHFLCQGNIYNRP-UHFFFAOYSA-N	18276	HMDB01362	C00282	783	
 Water	XLYOFNOQVPJJNP-UHFFFAOYSA-N	15377	HMDB02111	C00001	962	
 Hydrogen peroxide	MHAJPDPJQMAIIY-UHFFFAOYSA-N	16240	HMDB03125	C00027	784	
@@ -2315,7 +2315,7 @@ phenylacetaldehyde	DTUQWGWMVIHBKE-UHFFFAOYSA-N	16424	HMDB06236	C00601	998
 phosphatidylinositol 4,5-bisphosphate		28910				
 1-phosphatidyl-1D-myo-inositol 4-phosphate(3-)		58178				
 1-phosphatidyl-1D-myo-inositol 5-phosphate(3-)		57795				
-1-phosphatidyl-1D-myo-inositol(1-)		57880				
+1-phosphatidyl-1D-myo-inositol(1-)		57880	25245335			
 Palmitoyl-ACP (n-C16:0ACP)		5697				
 Pantetheine 4'-phosphate	JDMUPRLRUUMCTL-UHFFFAOYSA-N	16858	HMDB01416	C01134	987	
 adenosine 3',5'-bismonophosphate(4-)	WHTCPDAXWFLDIH-KQYNXXCUSA-N	17985	HMDB00061	C00054	159296	
